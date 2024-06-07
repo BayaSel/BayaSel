@@ -53,3 +53,21 @@ footer > p {
     margin: 3rem 0;
     text-align: center;
 }
+
+/* Media query */
+@media (max-width: 800px) {
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+        row-gap: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid .bayasel-socials > img {
+        width: 33%;
+    }
+}
