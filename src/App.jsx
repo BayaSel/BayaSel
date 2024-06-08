@@ -30,14 +30,14 @@ function App() {
           <img src="/logo.png" alt="Bayasel Logo" />
 
           {/* Search Field */}
-          <div class="relative text-[#343434] ">
+          <div className="relative text-[#343434] ">
             <input
               type="text"
               placeholder="Search for your product here"
-              class="relative pl-12 pr-3 py-2 w-[200px] lg:w-[500px] bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[10px] lg:text-base"
+              className="relative pl-12 pr-3 py-2 w-[200px] lg:w-[500px] bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[10px] lg:text-base"
             />
-            <div class="absolute inset-y-2 left-0 items-center pl-4 z-2">
-              <i class="bx bx-search bx-sm text-gray-400"></i>
+            <div className="absolute inset-y-2 left-0 items-center pl-4 z-2">
+              <i className="bx bx-search bx-sm text-gray-400"></i>
             </div>
           </div>
 
