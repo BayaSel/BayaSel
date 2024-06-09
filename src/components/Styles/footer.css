@@ -48,7 +48,9 @@ a {
     padding-right: 1rem;
     display: inline;
 }
-
+.bayasel-socials ul li a img {
+    display: inline;
+}
 footer > p {
     margin: 3rem 0;
     text-align: center;
