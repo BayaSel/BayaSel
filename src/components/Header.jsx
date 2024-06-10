@@ -34,7 +34,7 @@ function Header() {
             <input
               type="text"
               placeholder="Search for your product here"
-              className="relative pl-12 pr-3 py-2 w-[200px] lg:w-[500px] bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[10px] lg:text-base"
+              className="relative pl-12 pr-3 py-2 w-[100%] md:w-[350px] lg:w-[18.7rem] bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[10px] lg:text-base"
             />
             <div className="absolute inset-y-2 left-0 items-center pl-4 z-2">
               <i className="bx bx-search bx-sm text-gray-400"></i>
@@ -42,7 +42,7 @@ function Header() {
           </div>
 
           {/* other nav items */}
-          <div className="flex gap-2 lg:gap-3">
+          <div className="flex gap-2 lg:gap-3 pl-2">
             <div className="flex gap-5 items-center font-semibold ">
               <button className="hidden lg:flex gap-2">
                 <i className="bx bx-sm bx-help-circle"></i>
