@@ -1,13 +1,11 @@
 import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
+import Cart from './components/Cart'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Footer />
+      <Cart />
     </>
   )
 }
