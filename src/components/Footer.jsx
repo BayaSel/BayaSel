@@ -1,4 +1,3 @@
-import React from 'react';
 import bayaselFooterImg from '../assets/bayasel-footer-logo.svg';
 import X from '../assets/footerLogo/X.svg';
 import faceBook from '../assets/footerLogo/facebook.svg'
