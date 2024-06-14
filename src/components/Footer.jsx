@@ -6,7 +6,7 @@ import "./Styles/footer.css";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="w-screen">
       <div className="footer-grid">
         <div className="bayasel-socials">
           <img src={bayaselFooterImg} alt="BayaSel Logo" />

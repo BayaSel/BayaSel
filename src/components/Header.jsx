@@ -11,9 +11,9 @@ function Header() {
       <div className="bg-white top-0 sticky drop-shadow-sm w-screen">
         <header className="text-[#343434] font-normal hidden lg:flex justify-between text-base pt-12 font-poppins w-4/5 mx-auto">
           <div className="flex gap-2">
-            <i className="bx  p-1 bxl-facebook rounded-full bg-[#F8F8F8]"></i>
-            <i className="bx  p-1 bxl-instagram rounded-full bg-[#F8F8F8]"></i>
-            <div className="rounded-full p-1 bg-[#F8F8F8]">
+            <i className="bx bx-sm  p-1 bxl-facebook rounded-full bg-[#F8F8F8]"></i>
+            <i className="bx bx-sm p-1 bxl-instagram rounded-full bg-[#F8F8F8]"></i>
+            <div className="rounded-[45px] p-2 bg-[#F8F8F8]">
               <FaXTwitter />
             </div>
           </div>
@@ -22,7 +22,7 @@ function Header() {
             harvest.
           </p>
           <div className="flex">
-            <i className="bx bx-phone-call"></i>
+            <i className="bx bx-sm bx-phone-call pr-2"></i>
             <p>+1 (850) 344 0 66</p>
           </div>
         </header>
@@ -34,16 +34,16 @@ function Header() {
             <input
               type="text"
               placeholder="Search for your product here"
-              className="relative pl-12 pr-3 py-2 w-[100%] md:w-[350px] lg:w-[18.7rem] bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[10px] lg:text-base"
+              className="relative pl-6 lg:pl-12 pr-3 py-2 w-[100%] md:w-[360px] lg:w-[540px] bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[8px] md:text-xs lg:text-base"
             />
-            <div className="absolute inset-y-2 left-0 items-center pl-4 z-2">
-              <i className="bx bx-search bx-sm text-gray-400"></i>
+            <div className="absolute inset-y-2 left-0 items-center pl-1 lg:pl-4 z-2">
+              <i className="bx bx-search lg:bx-sm text-gray-400"></i>
             </div>
           </div>
 
           {/* other nav items */}
           <div className="flex gap-2 lg:gap-3 pl-2">
-            <div className="flex gap-5 items-center font-semibold ">
+            <div className="flex gap-5 items-center text-base font-semibold ">
               <button className="hidden lg:flex gap-2">
                 <i className="bx bx-sm bx-help-circle"></i>
                 <p>Help</p>
