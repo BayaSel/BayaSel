@@ -18,9 +18,9 @@ function ProductDetails() {
   };
   return (
     <>
-      <div className="pb-20 w-full">
-        <div className="flex gap-4 font- w-4/5 mx-auto mt-6 mb-14">
-          <div className="flex flex-col gap-4">
+      <div className="pb-20 w-full overflow-x-none scroll-smooth">
+        <div className="flex flex-col md:flex-row gap-4 font- w-4/5 mx-auto mt-6 mb-14">
+          <div className="hidden md:flex flex-col gap-4">
             <img src="/orange.png" alt="orange product image" />
             <img src="/grape.png" alt="grape product image" />
             <img src="/zucchinni.png" alt="zucchinni product image" />

@@ -6,10 +6,10 @@ function AccountList() {
   return (
     <div>
       <Popover>
-        <Popover.Button className="relative focus:outline-none flex gap-1">
+        <Popover.Button className="relative focus:outline-none flex gap-1 hover:text-[#4BAF47]">
           <i className="bx bx-sm bx-user"></i>
           <p className="hidden lg:block font-semibold">Account</p>
-          <i className="bx bx-sm bx-chevron-down"></i>
+          <i className="bx bx-sm bx-chevron-down hidden lg:block"></i>
         </Popover.Button>
         <Transition
           as={Fragment}
