@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { Route, Routes } from "react-router-dom";
 import CustomerReview from "../components/CustomerReview";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import ProductDescription from "../components/ProductDescription";
 import ProductDetailsNav from "../components/ProductDetailsNav";
 import ProductWarranty from "../components/ProductWarranty";
@@ -14,10 +16,12 @@ function ProductDetails() {
   };
 
   const decrement = () => {
-    setCount(count - 1);
+    setCount((c) => (c === 0 ? 0 : c - 1));
   };
+
   return (
     <>
+      <Header />
       <div className="pb-20 w-full overflow-x-none scroll-smooth">
         <div className="flex flex-col md:flex-row gap-4 font- w-4/5 mx-auto mt-6 mb-14">
           <div className="hidden md:flex flex-col gap-4">
@@ -91,6 +95,7 @@ function ProductDetails() {
           </Routes>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
