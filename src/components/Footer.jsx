@@ -99,7 +99,7 @@ function Footer() {
       </div>
 
       <p>
-        Copyright © {new Date().getFullYear()} bayacel.com. All rights reserved
+        Copyright © {new Date().getFullYear()} bayasel.com. All rights reserved
       </p>
     </footer>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import AccountList from "./AccountList";
+import { Link } from "react-router-dom";
 import Menu from "./Menu";
 
 function Header() {
@@ -50,10 +51,10 @@ function Header() {
                 <p>Help</p>
               </button>
               <AccountList />
-              <button className="flex gap-2 hover:text-[#4BAF47]">
+              <Link to="/cart" className="flex gap-2 hover:text-[#4BAF47]">
                 <i className="bx bx-sm bx-cart-alt"></i>
                 <p className="hidden lg:block">Cart</p>
-              </button>
+              </Link>
               <button className="hidden lg:block bg-[#4BAF47] hover:bg-[#5ad356] rounded-lg text-[#343434] font-semibold px-4 py-2">
                 Be a Vendor
               </button>
