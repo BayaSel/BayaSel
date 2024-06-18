@@ -1,17 +1,32 @@
-import './App.css'
-import Footer from './components/Footer'
-// import Form from './components/Form/Form'
-import Header from './components/Header'
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import LoginForm from "./pages/LoginForm";
+import RegisterForm from "./pages/RegisterForm";
 
 function App() {
-
   return (
     <>
-      <Header />
-      {/* <Form /> There would be a routing or Action btn in the header component(sign In) */}
-      <Footer />
+      {/* <Header /> */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              {/* {" "} */}
+              <Header />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="*" element={<p>Page Not found </p>} />
+      </Routes>
+      {/* There would be a routing or Action btn in the header component(sign In) */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

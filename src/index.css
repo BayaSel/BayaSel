@@ -21,3 +21,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 /* >>>>>>> dev-footer */
+input[type='checkbox'] {
+    accent-color: #4BAF47;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
