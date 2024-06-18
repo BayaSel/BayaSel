@@ -52,7 +52,7 @@ a {
 
 .bayasel-socials ul li {
     padding-right: 1rem;
-    display: inline;
+    display: inline-flex;
 }
 
 footer>p {

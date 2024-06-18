@@ -7,7 +7,7 @@ import Menu from "./Menu";
 function Header() {
   return (
     <>
-      <div className="bg-white top-0 sticky drop-shadow-sm w-screen overscroll-x-none">
+      <div className="bg-white top-0 sticky drop-shadow-sm w-screen overscroll-x-none pb-1">
         <header className="text-[#343434] font-normal hidden lg:flex justify-between text-base pt-12 font-poppins w-4/5 mx-auto">
           <div className="flex gap-2">
             <i className="bx bx-sm  p-1 bxl-facebook rounded-full bg-[#F8F8F8]"></i>
@@ -25,7 +25,7 @@ function Header() {
             <p>+1 (850) 344 0 66</p>
           </div>
         </header>
-        <nav className="flex justify-between lg:justify-around items-center mb-5 w-11/12 lg:w-5/6 mx-auto">
+        <nav className="flex justify-between lg:justify-around items-center mb-0 lg:mb-5 w-11/12 lg:w-5/6 mx-auto">
           <div className="flex items-center">
             <Menu />
             <img src="/logo.png" alt="Bayasel Logo" className="mb-2 lg:mb-0" />
@@ -61,6 +61,14 @@ function Header() {
             </div>
           </div>
         </nav>
+
+        <div className="lg:hidden text-[#343434] w-11/12 mx-auto mb-1">
+          <input
+            type="text"
+            placeholder="Search for your product here"
+            className="pl-6 pr-3 py-2 w-11/12 bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[10px]"
+          />
+        </div>
       </div>
     </>
   );

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 function Menu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ function Menu() {
           leaveTo="opacity-0 translate-y-2"
         >
           <Popover.Panel className="absolute left-0 top-0 gap-2">
-            <div className="w-[250px] h-screen bg-white font-normal flex flex-col py-[12px] cursor-pointer drop-shadow-sm">
+            <div className=" w-[250px] h-screen bg-white font-normal flex flex-col py-[12px] cursor-pointer drop-shadow-sm">
               <div className="flex gap-3 pb-5">
                 <i
                   className="bx bx-x bx-md hover:text-[#4BAF47] text-[#c4c4c4] px-2"
@@ -34,38 +35,42 @@ function Menu() {
                 <img src="/logo.png" alt="Bayasel Logo" />
               </div>
               <button
-                className="flex items-center gap-2 border-b border-gray px-6 py-1 mb-3"
+                className="flex items-center hover:text-[#4BAF47] gap-2 border-b border-gray px-6 py-1 mb-3"
                 onClick={() => setIsOpen(false)}
               >
                 <i className="bx bx-shopping-bag"></i>
                 <p>Orders</p>
               </button>
               <button
-                className="flex items-center gap-2 border-b border-gray px-6 py-1 mb-3"
+                className="flex items-center hover:text-[#4BAF47] gap-2 border-b border-gray px-6 py-1 mb-3"
                 onClick={() => setIsOpen(false)}
               >
                 <i className="bx bx-heart"></i>
                 <p>Saved Items</p>
               </button>
               <button
-                className="flex items-center gap-2 border-b border-gray px-6 py-1 mb-3"
+                className="flex items-center hover:text-[#4BAF47] gap-2 border-b border-gray px-6 py-1 mb-3"
                 onClick={() => setIsOpen(false)}
               >
                 <i className="bx bx-sm bx-help-circle"></i>
                 <p>Help</p>
               </button>
-              <button
-                className="flex items-center gap-2 border-b border-gray px-6 py-1 mb-3"
+              <Link
+                to="/cart"
+                className="flex items-center gap-2 hover:text-[#4BAF47] border-b border-gray px-6 py-1 mb-3"
                 onClick={() => setIsOpen(false)}
               >
                 <i className="bx bx-sm bx-cart-alt"></i>
                 <p>Cart</p>
-              </button>
+              </Link>
               <button className="bg-[#4BAF47] hover:bg-[#5ad356] rounded-lg text-[#343434] font-semibold px-5 py-3 mx-6 my-6">
                 Be a Vendor
               </button>
 
-              <button className=" py-1 mt-6" onClick={() => setIsOpen(false)}>
+              <button
+                className=" py-1 mt-6 hover:text-[#4BAF47]"
+                onClick={() => setIsOpen(false)}
+              >
                 Contact Us
               </button>
               <div className="flex gap-4 my-4 justify-center items-center">
