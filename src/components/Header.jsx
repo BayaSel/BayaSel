@@ -8,7 +8,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="bg-white top-0 sticky drop-shadow-sm w-screen">
+      <div className="bg-white top-0 drop-shadow-sm w-screen">
         <header className="text-[#343434] font-normal hidden lg:flex justify-between text-base pt-12 font-poppins w-4/5 mx-auto">
           <div className="flex gap-2">
             <i className="bx  p-1 bxl-facebook rounded-full bg-[#F8F8F8]"></i>
