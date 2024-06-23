@@ -38,9 +38,9 @@ function Header() {
               placeholder="Search for your product here"
               className="relative pl-6 lg:pl-12 pr-3 py-2 w-[100%] md:w-[360px] lg:w-[540px] bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[8px] md:text-xs lg:text-base"
             />
-            <div className="absolute inset-y-3 left-0 items-center pl-1 lg:pl-4 z-2">
-              <i className="bx bx-search bx-sm text-gray-400"></i>
-            </div>
+            <button className="absolute inset-y-3 left-0 items-center pl-1 lg:pl-4 z-2 cursor-pointer ">
+              <i className="bx bx-search bx-sm text-gray-400 hover:text-black"></i>
+            </button>
           </div>
 
           {/* other nav items */}
