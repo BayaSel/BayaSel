@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "./Hero";
 import Benefit from "./Benefit";
+import Category from "./Category";
 
 function Home() {
   return (
@@ -8,6 +9,8 @@ function Home() {
       <Hero />
 
       <Benefit />
+
+      <Category />
     </div>
   );
 }
