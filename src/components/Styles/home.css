@@ -8,13 +8,16 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
+  /* Tailwind CSS classes */
   @apply rounded-full border-2 border-white bg-black bg-opacity-50 flex items-center justify-center w-10 h-10;
 }
 
 .carousel-indicators {
-  @apply bottom-12;
+  /* Tailwind CSS classes */
+  bottom: 3rem; /* equivalent to bottom-12 */
 }
 
 .carousel-indicators .active {
+  /* Tailwind CSS classes */
   @apply bg-green-500;
 }

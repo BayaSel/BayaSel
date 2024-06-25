@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import Benefit from "./Benefit";
 import Category from "./Category";
+import Recommended from "./Recommended";
 
 function Home() {
   return (
@@ -11,6 +12,8 @@ function Home() {
       <Benefit />
 
       <Category />
+
+      <Recommended />
     </div>
   );
 }

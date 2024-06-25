@@ -12,6 +12,9 @@ module.exports = {
       height: {
         30: "120px",
       },
+      colors: {
+        "4BAF47": "#4BAF47",
+      },
     },
   },
   plugins: [],
