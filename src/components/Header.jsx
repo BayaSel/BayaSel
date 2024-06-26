@@ -32,11 +32,11 @@ function Header() {
           </div>
 
           {/* Search Field */}
-          <div className="hidden lg:block relative text-[#343434] ">
+          <div className="hidden md:flex relative text-[#343434]">
             <input
               type="text"
               placeholder="Search for your product here"
-              className="relative pl-6 lg:pl-12 pr-3 py-2 w-[100%] md:w-[360px] lg:w-[540px] bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[8px] md:text-xs lg:text-base"
+              className="relative pl-6 lg:pl-12 pr-3 py-2 w-[500px] bg-white rounded-md border border-[#C4C4C4] focus:outline-none focus:border-green-600 text-[8px] md:text-xs lg:text-base"
             />
             <button className="absolute inset-y-3 left-0 items-center pl-1 lg:pl-4 z-2 cursor-pointer ">
               <i className="bx bx-search bx-sm text-gray-400 hover:text-black"></i>
@@ -44,8 +44,8 @@ function Header() {
           </div>
 
           {/* other nav items */}
-          <div className="flex gap-1 lg:gap-3 pl-2">
-            <div className="flex gap-5 items-center text-base font-semibold ">
+          <div className="flex gap-1 pl-2">
+            <div className="flex gap-2 items-center text-sm font-semibold ">
               <button className="hidden lg:flex gap-2 hover:text-[#4BAF47]">
                 <i className="bx bx-sm bx-help-circle"></i>
                 <p>Help</p>
@@ -55,14 +55,14 @@ function Header() {
                 <i className="bx bx-sm bx-cart-alt"></i>
                 <p className="hidden lg:block">Cart</p>
               </Link>
-              <button className="hidden lg:block bg-[#4BAF47] hover:bg-[#5ad356] rounded-lg text-[#343434] font-semibold px-4 py-2">
+              <button className="hidden lg:block lg:w-[120px] ml-5 bg-[#4BAF47] hover:bg-[#5ad356] rounded-lg text-[#343434] font-semibold px-4 py-2">
                 Be a Vendor
               </button>
             </div>
           </div>
         </nav>
 
-        <div className="lg:hidden text-[#343434] w-11/12 mx-auto mb-1">
+        <div className="md:hidden text-[#343434] w-11/12 mx-auto mb-1">
           <input
             type="text"
             placeholder="Search for your product here"
