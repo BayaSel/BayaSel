@@ -8,6 +8,7 @@ import Livestock from "./images/livestock.png";
 import Poultry from "./images/poultry.png";
 import Aqua from "./images/aqua.png";
 import Forestry from "./images/forestry.png";
+import "../Styles/home.css";
 
 function Category() {
   const settings = {
@@ -18,8 +19,7 @@ function Category() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -38,7 +38,7 @@ function Category() {
           infinite: true,
           dots: true,
           centerMode: true,
-          centerPadding: "20px",
+          centerPadding: "10px",
         },
       },
       {
@@ -49,7 +49,7 @@ function Category() {
           infinite: true,
           dots: true,
           centerMode: true,
-          centerPadding: "20px",
+          centerPadding: "10px",
         },
       },
     ],
@@ -61,13 +61,13 @@ function Category() {
         Shop by categories
       </h2>
       <Slider {...settings}>
-        <Link to="/crops" className="flex flex-col items-center">
+        <Link to="/crops" className="flex flex-col items-center mx-0.5">
           <img src={Crops} alt="Crops" className="w-64 h-40 object-cover" />
           <p className="text-xl font-semibold leading-9 text-center mt-2">
             Crops
           </p>
         </Link>
-        <Link to="/livestock" className="flex flex-col items-center">
+        <Link to="/livestock" className="flex flex-col items-center mx-0.5">
           <img
             src={Livestock}
             alt="Livestock"
@@ -77,7 +77,7 @@ function Category() {
             Livestock
           </p>
         </Link>
-        <Link to="/poultry" className="flex flex-col items-center">
+        <Link to="/poultry" className="flex flex-col items-center mx-0.5">
           <img
             src={Poultry}
             alt="Poultry Products"
@@ -87,7 +87,7 @@ function Category() {
             Poultry Products
           </p>
         </Link>
-        <Link to="/aquaculture" className="flex flex-col items-center">
+        <Link to="/aquaculture" className="flex flex-col items-center mx-0.5">
           <img
             src={Aqua}
             alt="Aquaculture"
@@ -97,7 +97,7 @@ function Category() {
             Aquaculture
           </p>
         </Link>
-        <Link to="/forestry" className="flex flex-col items-center">
+        <Link to="/forestry" className="flex flex-col items-center mx-0.5">
           <img
             src={Forestry}
             alt="Forestry"
@@ -109,38 +109,6 @@ function Category() {
         </Link>
       </Slider>
     </div>
-  );
-}
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "black",
-        borderRadius: "50%",
-      }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "black",
-        borderRadius: "50%",
-      }}
-      onClick={onClick}
-    />
   );
 }
 

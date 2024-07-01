@@ -1,54 +1,54 @@
 import React from "react";
-import stalion from "./images/stalion.png";
-import beans from "./images/beans.png";
-import brama from "./images/brama.png";
-import guinea from "./images/guinea.png";
+import fowl from "./images/fowl.png";
+import velvet from "./images/velvet.png";
+import banana from "./images/banana.png";
+import mamagold from "./images/stalion.png";
 import "../Styles/home.css";
 
 const products = [
   {
-    name: "GOLDEN STALION - LONG GRAIN...",
+    name: "LIVE CHICKEN ( OLD LAYERS)",
     rating: 0,
     reviews: [],
     price: 850.0,
     originalPrice: 950.0,
-    image: stalion,
+    image: fowl,
     link: "#",
   },
   {
-    name: "BEANS - OLOYIN (honey) - 4 Ltrs...",
+    name: "AWIN - VELVET TAMARIND – pack",
     rating: 0,
     reviews: [],
     price: 850.0,
     originalPrice: 950.0,
-    image: beans,
+    image: velvet,
     link: "#",
   },
   {
-    name: "BRAMA - Piranhas - DOCTOR...",
+    name: "BANANA",
     rating: 0,
     reviews: [],
     price: 850.0,
     originalPrice: 950.0,
-    image: brama,
+    image: banana,
     link: "#",
   },
   {
-    name: "GUINEA FOWL - size 2",
+    name: "MAMA GOLD - LONG GRAIN RI...",
     rating: 0,
     reviews: [],
     price: 850.0,
     originalPrice: 950.0,
-    image: guinea,
+    image: mamagold,
     link: "#",
   },
 ];
 
-const Recommended = () => {
+const BestSeller = () => {
   return (
     <div className="recommended-products container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold">Recommended Products</h2>
+        <h2 className="text-2xl font-bold">Best Sellers</h2>
         <a
           href="#"
           className="flex items-center text-green-600 py-1 px-3 rounded"
@@ -62,7 +62,7 @@ const Recommended = () => {
         {products.map((product, index) => (
           <div
             key={index}
-            className="product-card rounded  flex flex-col items-start hover:shadow-lg transition-shadow w-full"
+            className="product-card  rounded  flex flex-col items-start hover:shadow-lg transition-shadow w-full"
           >
             {/* Product image */}
             <img
@@ -108,5 +108,4 @@ const Recommended = () => {
     </div>
   );
 };
-
-export default Recommended;
+export default BestSeller;

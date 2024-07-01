@@ -3,6 +3,7 @@ import Delivery from "./images/delivery.png";
 import Discount from "./images/discount.png";
 import PoD from "./images/pod.png";
 import Support from "./images/support.png";
+import "../Styles/home.css";
 
 function Benefit() {
   return (
