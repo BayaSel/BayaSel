@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import AccountList from "./AccountList";
 import { Link } from "react-router-dom";
@@ -45,7 +45,7 @@ function Header() {
 
           {/* other nav items */}
           <div className="flex gap-1 pl-2">
-            <div className="flex gap-2 items-center text-sm font-semibold ">
+            <div className="flex gap-3 items-center text-sm font-semibold ">
               <button className="hidden lg:flex gap-2 hover:text-[#4BAF47]">
                 <i className="bx bx-sm bx-help-circle"></i>
                 <p>Help</p>

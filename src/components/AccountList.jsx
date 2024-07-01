@@ -1,6 +1,7 @@
-import React from "react";
+//import React from "react";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 function AccountList() {
   return (
@@ -25,10 +26,10 @@ function AccountList() {
               <button className="bg-[#4BAF47] hover:bg-[#5ad356] rounded-lg mx-5 my-2 py-2 px-2 lg:px-3">
                 Sign in
               </button>
-              <button className="flex items-center gap-3 hover:bg-[#F8F8F8] px-3 py-1 lg:py-2">
+              <Link to='/account' className="flex items-center gap-3 hover:bg-[#F8F8F8] px-3 py-1 lg:py-2">
                 <i className="bx bx-user"></i>
                 <p>Account</p>
-              </button>
+              </Link>
               <button className="flex items-center gap-3 hover:bg-[#F8F8F8] px-3 py-1 lg:py-2">
                 <i className="bx bx-shopping-bag"></i>
                 <p>Orders</p>
@@ -38,7 +39,7 @@ function AccountList() {
                 <p>Saved Items</p>
               </button>
               <button className="flex items-center gap-3 hover:bg-[#F8F8F8] px-3 py-1 lg:py-2">
-              <i class='bx bx-globe'></i>
+              <i className='bx bx-globe'></i>
                 <p>Tracking</p>
               </button>
             </div>

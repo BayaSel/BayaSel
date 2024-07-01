@@ -14,7 +14,7 @@ export default function CartHeader() {
         <p className="text-gray-400">Shopping cart</p>
       </div>
       <div>
-        <Link to="/*" className="text-green-500">
+        <Link to="/" className="text-green-500">
           continue Shopping <WestRoundedIcon sx={{ color: green[500] }} />
         </Link>
       </div>
