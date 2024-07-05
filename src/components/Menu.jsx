@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";

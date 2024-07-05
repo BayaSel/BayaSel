@@ -25,8 +25,15 @@ const UserProfileProvider = ({ children }) => {
     }));
   };
 
+  const removeAddress = (index) => {
+    setProfile((prevProfile) => {
+      const updatedAddresses = prevProfile.addresses.filter((_, i) => i !== index);
+      return { ...prevProfile, addresses: updatedAddresses };
+    });
+  };
+
   return (
-    <UserProfileContext.Provider value={{ profile, addAddress, updateAddress }}>
+    <UserProfileContext.Provider value={{ profile, addAddress, updateAddress, removeAddress }}>
       {children}
     </UserProfileContext.Provider>
   );
