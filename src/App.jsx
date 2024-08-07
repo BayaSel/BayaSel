@@ -4,6 +4,10 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LoginForm from "./pages/LoginForm";
 import RegisterForm from "./pages/RegisterForm";
+import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import Account from "./pages/Account";
+
 
 function App() {
   return (
@@ -23,10 +27,12 @@ function App() {
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="*" element={<p>Page Not found </p>} />
+        <Route path="/*" element={<ProductDetails />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/account/*" element={<Account />} />
       </Routes>
       {/* There would be a routing or Action btn in the header component(sign In) */}
     </>
-  );
+  )
 }
-
 export default App;
