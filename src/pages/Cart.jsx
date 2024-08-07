@@ -1,5 +1,3 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import CartHeader from "../components/CartHeader";
 import CartProduct from "../components/CartProduct";
 import "../components/Styles/cart.css";
@@ -12,7 +10,6 @@ function Cart() {
   }
   return (
     <>
-      <Header />
       <CartHeader />
       {deleteItem ? (
         <p style={{ height: "50svh", display: "grid", placeContent: "center" }}>
@@ -21,7 +18,6 @@ function Cart() {
       ) : (
         <CartProduct itemRemoved={itemRemove} />
       )}
-      <Footer />
     </>
   );
 }

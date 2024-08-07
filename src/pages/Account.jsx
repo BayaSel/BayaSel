@@ -1,6 +1,4 @@
 import  {useState} from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import SideBar from '../components/SideBar'
 import Profile from './Profile'
 import Orders from './Orders'
@@ -16,7 +14,6 @@ function Account() {
 
   return (
     <div>
-      <Header />
       <div className="flex flex-row w-screen lg:w-4/5 gap-5 mx-auto my-4 h-full" >
       <div
           className={`lg:block basis-full lg:basis-1/4 ${
@@ -38,7 +35,6 @@ function Account() {
             </Routes>
           </div>
       </div>
-      <Footer/>
     </div>
   )
 }

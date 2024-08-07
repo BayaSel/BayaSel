@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-// import Footer from "./components/Footer";
-// import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./components/home/Home";
 import LoginForm from "./pages/LoginForm";
 import RegisterForm from "./pages/RegisterForm";
 import ProductDetails from "./pages/ProductDetails";
@@ -11,19 +12,19 @@ import Account from "./pages/Account";
 
 function App() {
   return (
-    <>
-      {/* <Header /> */}
-      <Routes>
-        <Route path="/*" element={<ProductDetails />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/account/*" element={<Account />} />
-        <Route path="/register" element={<RegisterForm />} />
-        <Route path="/login" element={<LoginForm />} />
-        <Route path="*" element={<p>Page Not found </p>} />
-      </Routes>
-      {/* There would be a routing or Action btn in the header component(sign In) */}
-    </>
-
+      <>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/*" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/account/*" element={<Account />} />
+          <Route path="/register" element={<RegisterForm />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="*" element={<p>Page Not Found</p>} />
+        </Routes>
+        <Footer />
+      </>
   );
 }
 
