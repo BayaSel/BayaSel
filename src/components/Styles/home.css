@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-container {
+  padding-bottom: 50px;
+}
+
+.btn-success {
+  @apply bg-green-500;
+  background-color: #4baf47;
+  margin-top: 40px;
+}
+.carousel {
+  z-index: 100;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  @apply rounded-full border-2 border-white bg-black bg-opacity-50 flex items-center justify-center w-10 h-10;
+}
+
+.carousel-indicators {
+  @apply flex justify-center mt-4;
+}
+
+.carousel-indicators span {
+  @apply w-2 h-2 rounded-full bg-gray-400 mx-1;
+}
+
+.carousel-indicators .active {
+  @apply bg-green-500;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.carousel-indicators span {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicators span.active {
+  background-color: #4baf47;
+}
+
+.ad-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../home/images/dar.png);
+  border-radius: 24px;
+}
+
+.ad-text {
+  flex: 1;
+}
+
+.ad-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+
+.ad-description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.ad-image-container {
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.ad-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.latest-products {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 14px;
+}
+
+.product-card .original-price {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-numbers {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-number {
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.pagination-number.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .ad-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ad-image-container {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .img-ad {
+    width: 100%;
+    height: auto;
+  }
+}

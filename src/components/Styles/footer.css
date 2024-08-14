@@ -4,13 +4,16 @@ footer {
     background-color: #000;
     color: #C4C4C4;
 }
+
 ul {
     list-style-type: none;
     font-size: 0.8rem;
 }
+
 ul li {
     padding: 0.8rem 0;
 }
+
 a {
     text-decoration: none;
     color: #C4C4C4;
@@ -25,7 +28,7 @@ a {
     padding-bottom: 2rem;
 }
 
-.footer-grid > .footer-info > h3 {
+.footer-grid>.footer-info>h3 {
     color: #4BAF47;
     margin-bottom: 1rem;
 }
@@ -33,10 +36,12 @@ a {
 .footer-grid .bayasel-socials {
     margin-right: 1rem;
 }
-.footer-grid .bayasel-socials > img {
+
+.footer-grid .bayasel-socials>img {
     width: 20%;
     display: block;
 }
+
 .footer-grid .bayasel-socials p {
     font-size: 0.95rem;
 }
@@ -44,14 +49,13 @@ a {
 .bayasel-socials ul {
     margin: 1rem 0;
 }
+
 .bayasel-socials ul li {
     padding-right: 1rem;
-    display: inline;
+    display: inline-flex;
 }
-.bayasel-socials ul li a img {
-    display: inline;
-}
-footer > p {
+
+footer>p {
     margin: 3rem 0;
     text-align: center;
 }
@@ -69,7 +73,7 @@ footer > p {
         grid-template-columns: 1fr;
     }
 
-    .footer-grid .bayasel-socials > img {
+    .footer-grid .bayasel-socials>img {
         width: 33%;
     }
 }
