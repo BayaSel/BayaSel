@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
+import { Popover, PopoverButton, PopoverPanel, Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
 
 function Menu() {
@@ -9,12 +9,12 @@ function Menu() {
   return (
     <div className="lg:hidden">
       <Popover>
-        <Popover.Button
+        <PopoverButton
           className="relative focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           <i className="bx bx-sm bx-menu text-[#4BAF47] hover:text-[#5ad356] cursor-pointer lg:hidden"></i>
-        </Popover.Button>
+        </PopoverButton>
         <Transition
           as={Fragment}
           show={isOpen}
@@ -25,7 +25,7 @@ function Menu() {
           leaveFrom="opacity-100 translate-y-0"
           leaveTo="opacity-0 translate-y-2"
         >
-          <Popover.Panel className="absolute left-0 top-0 gap-2">
+          <PopoverPanel className="absolute left-0 top-0 gap-2">
             <div className=" w-[250px] h-screen bg-white font-normal flex flex-col py-[12px] cursor-pointer drop-shadow-sm">
               <div className="flex gap-3 pb-5">
                 <i
@@ -81,7 +81,7 @@ function Menu() {
                 </div>
               </div>
             </div>
-          </Popover.Panel>
+          </PopoverPanel>
         </Transition>
       </Popover>
     </div>

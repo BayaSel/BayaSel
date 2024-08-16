@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -8,23 +8,29 @@ import RegisterForm from "./pages/RegisterForm";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import Account from "./pages/Account";
+import Track from "./pages/Track";
 
 
 function App() {
+  const location = useLocation();
+  
+  const hideHeaderFooter = location.pathname === '/login' || location.pathname === '/register';
+
   return (
-      <>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/product/*" element={<ProductDetails />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/account/*" element={<Account />} />
-          <Route path="/register" element={<RegisterForm />} />
-          <Route path="/login" element={<LoginForm />} />
-          <Route path="*" element={<p>Page Not Found</p>} />
-        </Routes>
-        <Footer />
-      </>
+    <>
+      {!hideHeaderFooter && <Header />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/*" element={<ProductDetails />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/account/*" element={<Account />} />
+        <Route path="/track/*" element={<Track />} />
+        <Route path="*" element={<p>Page Not Found</p>} />
+      </Routes>
+      {!hideHeaderFooter && <Footer />}
+    </>
   );
 }
 
