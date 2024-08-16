@@ -6,7 +6,6 @@ const slides = [
     {
         title: "Explore Our Wide Range of Products",
         paragraph: "Discover a diverse selection of high-quality of seeds and plants that promise excellent yield and resilience",
-        
     },
     {
         title: "Slide 2",
@@ -53,7 +52,7 @@ function Slides() {
                 </div>
                 <button className='w-[141px] h-[48px] bg-green-700 flex justify-center p-[12px] gap-[3px] rounded-md mb-[60px]'>
                     <p className='text-[16px] font-semibold'>Shop Now</p>
-                    <img src="public/shopping-cart.png" alt="" className='w-[24px] h-[24px]'/>
+                    <img src="/shopping-cart.png" alt="" className='w-[24px] h-[24px]'/>
                 </button>
                 <div className='flex gap-[12px]'>
                     {[...Array(slides.length)].map((_,index)=>

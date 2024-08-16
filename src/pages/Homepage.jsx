@@ -13,7 +13,9 @@ function Homepage() {
       <div className='w-full absolute top-0 bottom-0'>
         <Slides />
       </div>
-      <Offers />
+      <div>
+        <Offers />     
+      </div>
     </div>
   );
 }
