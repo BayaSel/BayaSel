@@ -5,6 +5,8 @@ import Header from "./components/Header";
 // import Home from "./components/home/Home";
 import LoginForm from "./pages/LoginForm";
 import RegisterForm from "./pages/RegisterForm";
+import Homepage from "./pages/Homepage";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
             <>
               {/* {" "} */}
               <Header />
+              <Homepage />
               <Footer />
             </>
           }
