@@ -2,10 +2,11 @@ import React from 'react';
 import Slides from '../components/Slides/Slides';
 import Offers from '../components/Offers/Offers';
 import Categories from './Categories/Categories';
+import Products from '../components/Products/Products';
 
 function Homepage() {
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full min-h-screen relative">
       <img
         src="/images/background.png"
         alt="Background"
@@ -17,9 +18,8 @@ function Homepage() {
       <div>
         <Offers />     
       </div>
-      <div>
-        <Categories />
-      </div>
+      <Categories />
+      <Products />
     </div>
   );
 }
