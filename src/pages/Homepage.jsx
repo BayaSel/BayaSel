@@ -1,6 +1,7 @@
 import React from 'react';
 import Slides from '../components/Slides/Slides';
 import Offers from '../components/Offers/Offers';
+import Categories from './Categories/Categories';
 
 function Homepage() {
   return (
@@ -15,6 +16,9 @@ function Homepage() {
       </div>
       <div>
         <Offers />     
+      </div>
+      <div>
+        <Categories />
       </div>
     </div>
   );
