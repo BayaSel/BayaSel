@@ -1,78 +1,80 @@
-.Checkout{
-    @apply justify-center items-center w-2/4 mx-auto 
-    box-border border border-red-400;
+/* General Styles */
+.checkout-container {
+    @apply flex justify-center items-center w-2/4 mx-auto box-border border border-red-400;
 }
 
-.checkout-form{
+.checkout-form {
     @apply w-full flex flex-col justify-center p-24;
 }
 
-.contact-info h2, .shipping-add h2{
-    @apply font-semibold text-lg mb-3;
+.contact-info h2, .shipping-add h2 {
+    @apply text-lg font-semibold mb-3;
 }
 
-.input-container{
-    @apply relative w-full;
+.input-container {
+    @apply relative w-full mb-3;
 }
 
-input {
+.input-container input {
     @apply w-full pl-10 pr-3 h-12 text-base border rounded-md;
-  }
+}
 
 .placeholder {
-    @apply absolute gap-5 left-3 top-1/2 text-lg pointer-events-none 
-    p-3 flex items-center;
+    @apply absolute left-3 top-1/2 text-lg pointer-events-none p-3 flex items-center;
     transform: translateY(-50%);
     color: #888;
 }
 
-input-container input:focus + .placeholder,
+.placeholder i {
+    @apply mr-2; /* Add margin-right to create space between icon and text */
+}
+
+.input-container input:focus + .placeholder,
 .input-container input:not(:placeholder-shown) + .placeholder {
-  display: none; 
+    display: none;
 }
 
-.contact-info, .shipping-add, .checkboxes{
-    @apply mb-1 p-3 flex flex-col;
+.info {
+    @apply flex flex-row gap-4 mb-3; /* Use flex-row for horizontal layout */
 }
 
-.info{
-    @apply flex my-3 gap-3;
+.shipping-add .shipping {
+    @apply flex justify-between items-center mb-3;
 }
 
-.shipping{
-    @apply flex justify-between w-full my-3;
-}
-
-.shipping p{
+.shipping-add .shipping p {
     @apply text-green-500 text-lg;
 }
 
-.shipping-info{
-    @apply flex flex-col ;
+.shipping-info {
+    @apply flex flex-col;
 }
 
-.dropdown-container{
-    @apply flex w-full relative gap-3;
+.dropdown-container {
+    @apply flex w-full relative gap-3 mb-5;
 }
 
-.dropdown{
-    @apply relative w-2/4 h-12 my-5;
+.dropdown {
+    @apply relative w-2/4 h-12;
 }
 
 .dropdown-header {
-    @apply flex justify-between items-center h-12 p-5 cursor-pointer bg-white
-    border rounded;
-    color: grey;
+    @apply flex justify-between items-center h-12 p-5 cursor-pointer bg-white border rounded text-gray-500;
 }
 
-.check{
-    @apply flex items-center gap-3 my-2 rounded-md ;
+.check {
+    @apply flex items-center gap-3 mb-2 rounded-md;
 }
 
-.checkbox-class{
-    @apply h-6 w-6 border-black; 
-}
-
-.checkboxes label{
+.check label {
     @apply ml-2 text-green-500 text-lg;
+}
+
+/* Specific Styles */
+.address-input {
+    @apply w-full;
+}
+
+.postal-code {
+    @apply w-1/2;
 }
