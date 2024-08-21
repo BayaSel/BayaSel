@@ -5,6 +5,7 @@ import Header from "./components/Header";
 // import Home from "./components/home/Home";
 import LoginForm from "./pages/LoginForm";
 import RegisterForm from "./pages/RegisterForm";
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="*" element={<p>Page Not found </p>} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       {/* There would be a routing or Action btn in the header component(sign In) */}
     </>
