@@ -1,14 +1,19 @@
 /* General Styles */
 .checkout-container {
     @apply flex justify-center items-center w-2/4 mx-auto box-border border border-red-400;
+    /* padding-top: 80px; */
 }
 
 .checkout-form {
-    @apply w-full flex flex-col justify-center p-24;
+    @apply w-full flex flex-col justify-between p-24 gap-10;
 }
 
 .contact-info h2, .shipping-add h2 {
-    @apply text-lg font-semibold mb-3;
+    @apply text-xl font-semibold;
+}
+
+.contact-info h2 {
+    @apply mb-6;
 }
 
 .input-container {
@@ -26,7 +31,7 @@
 }
 
 .placeholder i {
-    @apply mr-2; /* Add margin-right to create space between icon and text */
+    @apply mr-5;
 }
 
 .input-container input:focus + .placeholder,
@@ -39,7 +44,7 @@
 }
 
 .shipping-add .shipping {
-    @apply flex justify-between items-center mb-3;
+    @apply flex justify-between items-center mb-6;
 }
 
 .shipping-add .shipping p {
@@ -63,11 +68,11 @@
 }
 
 .check {
-    @apply flex items-center gap-3 mb-2 rounded-md;
+    @apply flex items-center gap-3 mb-2 rounded-md text-lg;
 }
 
 .check label {
-    @apply ml-2 text-green-500 text-lg;
+    @apply ml-4 text-green-500 text-lg;
 }
 
 /* Specific Styles */
