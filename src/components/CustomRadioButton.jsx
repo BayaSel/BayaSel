@@ -1,27 +1,25 @@
-import { useState } from 'react';
-
-export default function CustomRadioButton() {
-  const [isChecked, setIsChecked] = useState(false);
-
+/* eslint-disable react/prop-types */
+export default function CustomRadioButton({ isChecked, onChange, label }) {
   return (
     <div className="flex items-center gap-2">
       <input
         type="radio"
-        id="custom-radio"
-        name="option"
+        id={label}
+        name={label}
         className="hidden"
         checked={isChecked}
-        onChange={() => setIsChecked(true)}
+        onChange={onChange}
       />
       <label
-        htmlFor="custom-radio"
+        htmlFor={label}
         className={`w-6 h-6 border-2 ${
-          isChecked ? 'bg-green-500 border-green-500' : 'border-gray-300'
+          isChecked ? 'bg-white border-black' : 'border-black'
         } rounded-full flex items-center justify-center cursor-pointer`}
+        onClick={onChange}
       >
-        {isChecked && <div className="w-4 h-4 bg-white rounded-full"></div>}
+        {isChecked && <div className="w-3 h-3 bg-green-500 rounded-full"></div>}
       </label>
-      <span>Option 1</span>
+      <span>{label}</span>
     </div>
   );
 }
