@@ -5,7 +5,7 @@
 }
 
 .checkout-form {
-    @apply w-full flex flex-col justify-between p-24 gap-10;
+    @apply w-full flex flex-col justify-between p-24 gap-8;
 }
 
 .contact-info h2, .shipping-add h2 {
@@ -71,8 +71,20 @@
     @apply flex items-center gap-3 mb-2 rounded-md text-lg;
 }
 
-.check label {
+.check label{
     @apply ml-4 text-green-500 text-lg;
+}
+
+.radios{
+    @apply flex justify-between items-center px-4;
+}
+
+.radio{
+    @apply flex items-center gap-3 mb-2;
+}
+
+.radio{
+    @apply font-semibold
 }
 
 /* Specific Styles */
@@ -82,4 +94,8 @@
 
 .postal-code {
     @apply w-1/2;
+}
+
+.btn{
+    @apply text-white font-semibold bg-green-500 rounded-md h-16;
 }

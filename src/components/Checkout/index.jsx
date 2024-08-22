@@ -2,8 +2,17 @@ import Header from '../Header';
 import Footer from '../Footer';
 import './Checkout.css';
 import CustomCheckbox from '../CustomCheckbox';
+import CustomRadioButton from '../CustomRadioButton';
+import { useState } from 'react';
 
 const Checkout = () => {
+
+    const [selectedOption, setSelectedOption] = useState(null);
+
+    const handleRadioChange = (option) => {
+      setSelectedOption((prevOption) => (prevOption === option ? null : option));
+    };
+
     return (
      <>
          <Header className="fixed z-50" />
@@ -88,15 +97,22 @@ const Checkout = () => {
                     </div>
                 </section>
                 <section className='radios'>
-                    <div>
-                        <input type="radio" id="pay-card" className='custom-radio'/>
-                        <label htmlFor="pay-card"></label>
+                    <div className='radio'>
+                    <CustomRadioButton
+                        label="Pay with Card"
+                        isChecked={selectedOption === 'Pay with Card'}
+                        onChange={() => handleRadioChange('Pay with Card')}
+                    />
                     </div>
-                    <div>
-                        <input type="radio" id="pay-delivery" className='custom-radio'/>
-                        <label htmlFor="pay-delivery"></label>
+                    <div className='radio'>
+                    <CustomRadioButton
+                        label="Pay on Delivery"
+                        isChecked={selectedOption === 'Pay on Delivery'}
+                        onChange={() => handleRadioChange('Pay on Delivery')}
+                    />
                     </div>
                 </section>
+                <button className='btn'>Proceed</button>
             </section>
          </div>
          <Footer />
