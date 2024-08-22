@@ -1,10 +1,11 @@
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
 // import Home from "./components/home/Home";
-import LoginForm from "./pages/LoginForm";
-import RegisterForm from "./pages/RegisterForm";
+import LoginForm from './pages/LoginForm';
+import RegisterForm from './pages/RegisterForm';
+import SuccessDetails from './pages/SuccessDetails';
 
 function App() {
   return (
@@ -12,18 +13,20 @@ function App() {
       {/* <Header /> */}
       <Routes>
         <Route
-          path="/"
+          path='/'
           element={
             <>
               {/* {" "} */}
               <Header />
+              <SuccessDetails />
               <Footer />
             </>
           }
         />
-        <Route path="/register" element={<RegisterForm />} />
-        <Route path="/login" element={<LoginForm />} />
-        <Route path="*" element={<p>Page Not found </p>} />
+        <Route path='/register' element={<RegisterForm />} />
+        <Route path='/login' element={<LoginForm />} />
+        <Route path='/success_details' element={<SuccessDetails />} />
+        <Route path='*' element={<p>Page Not found </p>} />
       </Routes>
       {/* There would be a routing or Action btn in the header component(sign In) */}
     </>
