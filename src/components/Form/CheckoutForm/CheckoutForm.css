@@ -1,10 +1,11 @@
 /* General Styles */
 .checkout-container {
-    @apply flex justify-center items-center w-11/12 md:w-3/4 lg:w-2/4 mx-auto box-border rounded-lg shadow-lg;
+    @apply flex justify-center items-center w-full md:w-3/4 
+    lg:w-2/4 mx-auto box-border rounded-lg shadow-lg;
 }
 
 .checkout-form {
-    @apply w-full flex flex-col justify-between p-6 md:p-12 lg:p-24 gap-8;
+    @apply w-full flex flex-col justify-between p-5 md:p-12 lg:p-24 gap-8;
 }
 
 .contact-info h2, .shipping-add h2 {
@@ -20,11 +21,12 @@
 }
 
 .input-container input {
-    @apply w-full pl-10 pr-3 h-10 md:h-12 text-base border rounded-md;
+    @apply w-full h-10 md:h-12 text-base border rounded-md;
 }
 
 .placeholder {
-    @apply absolute left-3 top-1/2 text-sm md:text-lg pointer-events-none p-2 md:p-3 flex items-center;
+    @apply absolute left-1 top-1/2 text-xs md:text-lg pointer-events-none 
+    p-3 flex items-center;
     transform: translateY(-50%);
     color: #888;
 }
@@ -39,7 +41,7 @@
 }
 
 .info {
-    @apply flex flex-row gap-4 mb-3; /* Maintain flex-row for horizontal layout */
+    @apply flex flex-row gap-4;
 }
 
 .shipping-add .shipping {
@@ -63,7 +65,8 @@
 }
 
 .dropdown-header {
-    @apply flex justify-between items-center h-10 md:h-12 p-4 md:p-5 cursor-pointer bg-white border rounded text-gray-500;
+    @apply flex justify-between items-center h-10 md:h-12 p-4 md:p-5 cursor-pointer
+    bg-white border rounded text-gray-500 text-xs md:text-lg;
 }
 
 .check {
@@ -71,15 +74,11 @@
 }
 
 .check label{
-    @apply ml-4 text-green-500 text-base md:text-lg;
+    @apply mr-2 text-green-500 text-sm md:text-lg;
 }
 
 .radios{
-    @apply flex justify-between items-center px-2 md:px-4;
-}
-
-.radio{
-    @apply flex items-center gap-3 mb-2 font-semibold;
+    @apply flex justify-between md:justify-start md:gap-60 items-center;
 }
 
 /* Specific Styles */

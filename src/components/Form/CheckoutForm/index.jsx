@@ -1,21 +1,21 @@
-import Header from '../Header';
-import Footer from '../Footer';
-import './Checkout.css';
-import CustomCheckbox from '../CustomCheckbox';
-import CustomRadioButton from '../CustomRadioButton';
+import './CheckoutForm.css';
+import CustomCheckbox from '../../CustomCheckbox';
+import CustomRadioButton from '../../CustomRadioButton';
 import { useState } from 'react';
 
 const Checkout = () => {
 
     const [selectedOption, setSelectedOption] = useState(null);
 
+    const handleCheckboxChange = (isChecked) => {
+        console.log("Checkbox is now: ", isChecked);
+      };
+
     const handleRadioChange = (option) => {
       setSelectedOption((prevOption) => (prevOption === option ? null : option));
     };
 
     return (
-     <>
-         <Header/>
          <div className='checkout-container'>
             <section className='checkout-form'>
                 <section className='contact-info'>
@@ -87,36 +87,36 @@ const Checkout = () => {
                 </section>
                 <section className='checkboxes'>
                     <div className='check'>
-                        <CustomCheckbox />
+                        <CustomCheckbox 
+                            onChange={handleCheckboxChange}
+                            className='shipOtherAdd'
+                        />
                         <label htmlFor="ship">Ship to another address</label>
                     </div>
                     <div className='check'>
                         <input type="checkbox" className="hidden peer" />
-                        <CustomCheckbox />
+                        <CustomCheckbox 
+                            onChange={handleCheckboxChange}
+                            className='saveInfo'
+                        />
                         <label htmlFor="save-info">Save this information for next time</label>
                     </div>
                 </section>
                 <section className='radios'>
-                    <div className='radio'>
                     <CustomRadioButton
                         label="Pay with Card"
                         isChecked={selectedOption === 'Pay with Card'}
                         onChange={() => handleRadioChange('Pay with Card')}
                     />
-                    </div>
-                    <div className='radio'>
                     <CustomRadioButton
                         label="Pay on Delivery"
                         isChecked={selectedOption === 'Pay on Delivery'}
                         onChange={() => handleRadioChange('Pay on Delivery')}
                     />
-                    </div>
                 </section>
                 <button className='btn'>Proceed</button>
             </section>
          </div>
-         <Footer />
-     </>   
     );
 }
 
