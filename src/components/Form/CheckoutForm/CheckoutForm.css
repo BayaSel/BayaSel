@@ -1,11 +1,11 @@
 /* General Styles */
 .checkout-container {
     @apply flex justify-center items-center w-full md:w-3/4 
-    lg:w-2/4 mx-auto box-border rounded-lg shadow-lg;
+    lg:w-3/5 mx-auto box-border rounded-lg md:shadow-md mb-6 md:mt-10;
 }
 
 .checkout-form {
-    @apply w-full flex flex-col justify-between p-5 md:p-12 lg:p-24 gap-8;
+    @apply w-full flex flex-col justify-between p-5 md:p-28 lg:p-24 gap-8;
 }
 
 .contact-info h2, .shipping-add h2 {
