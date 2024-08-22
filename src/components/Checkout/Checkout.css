@@ -1,19 +1,18 @@
 /* General Styles */
 .checkout-container {
-    @apply flex justify-center items-center w-2/4 mx-auto box-border border border-red-400;
-    /* padding-top: 80px; */
+    @apply flex justify-center items-center w-11/12 md:w-3/4 lg:w-2/4 mx-auto box-border rounded-lg shadow-lg;
 }
 
 .checkout-form {
-    @apply w-full flex flex-col justify-between p-24 gap-8;
+    @apply w-full flex flex-col justify-between p-6 md:p-12 lg:p-24 gap-8;
 }
 
 .contact-info h2, .shipping-add h2 {
-    @apply text-xl font-semibold;
+    @apply text-lg md:text-xl font-semibold;
 }
 
 .contact-info h2 {
-    @apply mb-6;
+    @apply mb-4 md:mb-6;
 }
 
 .input-container {
@@ -21,17 +20,17 @@
 }
 
 .input-container input {
-    @apply w-full pl-10 pr-3 h-12 text-base border rounded-md;
+    @apply w-full pl-10 pr-3 h-10 md:h-12 text-base border rounded-md;
 }
 
 .placeholder {
-    @apply absolute left-3 top-1/2 text-lg pointer-events-none p-3 flex items-center;
+    @apply absolute left-3 top-1/2 text-sm md:text-lg pointer-events-none p-2 md:p-3 flex items-center;
     transform: translateY(-50%);
     color: #888;
 }
 
 .placeholder i {
-    @apply mr-5;
+    @apply mr-2 md:mr-5;
 }
 
 .input-container input:focus + .placeholder,
@@ -40,15 +39,15 @@
 }
 
 .info {
-    @apply flex flex-row gap-4 mb-3; /* Use flex-row for horizontal layout */
+    @apply flex flex-row gap-4 mb-3; /* Maintain flex-row for horizontal layout */
 }
 
 .shipping-add .shipping {
-    @apply flex justify-between items-center mb-6;
+    @apply flex justify-between items-center mb-4 md:mb-6;
 }
 
 .shipping-add .shipping p {
-    @apply text-green-500 text-lg;
+    @apply text-green-500 text-base md:text-lg;
 }
 
 .shipping-info {
@@ -56,35 +55,31 @@
 }
 
 .dropdown-container {
-    @apply flex w-full relative gap-3 mb-5;
+    @apply flex w-full relative gap-3 mb-3 md:mb-5;
 }
 
 .dropdown {
-    @apply relative w-2/4 h-12;
+    @apply relative w-full md:w-2/4 h-10 md:h-12;
 }
 
 .dropdown-header {
-    @apply flex justify-between items-center h-12 p-5 cursor-pointer bg-white border rounded text-gray-500;
+    @apply flex justify-between items-center h-10 md:h-12 p-4 md:p-5 cursor-pointer bg-white border rounded text-gray-500;
 }
 
 .check {
-    @apply flex items-center gap-3 mb-2 rounded-md text-lg;
+    @apply flex items-center gap-3 mb-2 rounded-md text-sm md:text-lg;
 }
 
 .check label{
-    @apply ml-4 text-green-500 text-lg;
+    @apply ml-4 text-green-500 text-base md:text-lg;
 }
 
 .radios{
-    @apply flex justify-between items-center px-4;
+    @apply flex justify-between items-center px-2 md:px-4;
 }
 
 .radio{
-    @apply flex items-center gap-3 mb-2;
-}
-
-.radio{
-    @apply font-semibold
+    @apply flex items-center gap-3 mb-2 font-semibold;
 }
 
 /* Specific Styles */
@@ -93,9 +88,9 @@
 }
 
 .postal-code {
-    @apply w-1/2;
+    @apply w-full md:w-1/2;
 }
 
-.btn{
-    @apply text-white font-semibold bg-green-500 rounded-md h-16;
+.btn {
+    @apply text-white font-semibold bg-green-500 rounded-md h-12 md:h-16;
 }

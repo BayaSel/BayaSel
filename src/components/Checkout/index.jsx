@@ -15,7 +15,7 @@ const Checkout = () => {
 
     return (
      <>
-         <Header className="fixed z-50" />
+         <Header/>
          <div className='checkout-container'>
             <section className='checkout-form'>
                 <section className='contact-info'>
