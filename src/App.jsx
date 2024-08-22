@@ -5,7 +5,7 @@ import Header from "./components/Header";
 // import Home from "./components/home/Home";
 import LoginForm from "./pages/LoginForm";
 import RegisterForm from "./pages/RegisterForm";
-import Checkout from "./components/Checkout";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
