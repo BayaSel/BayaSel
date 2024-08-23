@@ -15,7 +15,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 function App() {
   const location = useLocation();
   
-  const hideHeaderFooter = location.pathname === '/login' || location.pathname === '/register' || location.pathname === '/admin';
+  const hideHeaderFooter = location.pathname.startsWith('/login') || location.pathname.startsWith('/register') || location.pathname.startsWith('/admin');
 
   return (
     <>

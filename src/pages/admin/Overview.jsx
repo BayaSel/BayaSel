@@ -45,7 +45,7 @@ export default function Overview() {
                 <div className="flex justify-between font-semibold">
                     <h2 className="text-xl text-[#555657]">Sales Summary</h2>
                     <div className="flex gap-2">
-                        <button className="bg-Green hover:bg-[#63da5f] text-white py-1 px-[10px] rounded-lg text-base">Monthly</button>
+                        <button className="bg-Green hover:bg-[#63da5f] text-white py-1 px-[10px] cursor-pointer rounded-lg text-base">Monthly</button>
                         <Select />
                     </div>
                 </div>
@@ -102,6 +102,126 @@ export default function Overview() {
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </section>
+
+        {/* Recent Order Section */}
+        <section className="p-4 bg-white rounded-[10px] lg:w-[700px] w-fit mb-5">
+            <div className="flex justify-between py-2 font-semibold">
+                <h2 className="text-[#555657] text-xl">Recent Order</h2>
+                <button className="text-Green text-sm cursor-pointer">See all</button>
+            </div>
+            <table className="table-auto border-collapse my-3 mx-2 w-full">
+                <thead>
+                    <tr className="text-sm font-medium bg-Green text-white rounded-xl justify-around">
+                        <th className="px-2 py-3">Order no.</th>
+                        <th className="px-2 py-3">Date</th>
+                        <th className="px-2 py-3">Vendor</th>
+                        <th className="pl-1.5 py-3">Customer name</th>
+                        <th className="px-2 py-3">Price</th>
+                        <th className="px-2 py-3">Satus</th>
+                    </tr>
+                </thead>
+                <tbody className="font-medium text-[10px] text-[#555657] divide-y divide-[#E5E7EB] py-2">
+                    <tr className="p-3">
+                        <td className='py-3'>#4353768923</td>
+                        <td className='py-3'>12/09/24</td>
+                        <td className='py-3'>LMK Farms</td>
+                        <td className='py-3 pl-3'>Kate John</td>
+                        <td className='py-3'>$350</td>
+                        <td className='py-3'><button className="bg-[#2A8935] text-white rounded-lg py-2 px-[10px]">Delivered</button></td>
+                    </tr>
+                    <tr className="p-3">
+                        <td className='py-3'>#4353768923</td>
+                        <td className='py-3'>12/09/24</td>
+                        <td className='py-3'>LMK Farms</td>
+                        <td className='py-3 pl-3'>Kate John</td>
+                        <td className='py-3'>$350</td>
+                        <td className='py-3'><button className="bg-[#F18805] text-white rounded-lg py-2 px-[10px]">Pending</button></td>
+                    </tr>
+                    <tr className="p-3">
+                        <td className='py-3'>#4353768923</td>
+                        <td className='py-3'>12/09/24</td>
+                        <td className='py-3'>LMK Farms</td>
+                        <td className='py-3 pl-3'>Kate John</td>
+                        <td className='py-3'>$350</td>
+                        <td className='py-3'><button className="bg-[#F18805] text-white rounded-lg py-2 px-[10px]">Pending</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        {/* Out of Stock & Request Section */}
+        <section className="flex flex-col lg:flex-row my-2 gap-3 font-poppins">
+            <div className="bg-white rounded-[10px] p-3 ">
+                <h2 className="text-[#960200] font-semibold text-xl py-2">Out of Stock</h2>
+                <table className="border-collapse">
+                    <thead className="bg-Green text-white rounded-lg">
+                        <tr className="text-sm font-medium">
+                            <th className="px-3 py-2">Product</th>
+                            <th className="px-3 py-2">Category</th>
+                            <th className="px-3 py-2">Vendor</th>
+                            <th className="px-3 py-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody className="font-medium text-[10px] text-[#555657] divide-y divide-[#E5E7EB]">
+                        <tr className='my-1'>
+                            <td className="flex flex-col lg:flex-row gap-1 py-3">
+                                <img src="/Beans.png" alt="Image of beans" className="w-[50px]"/>
+                                <p className="self-center">Beans</p>
+                            </td>
+                            <td className="text-center">Crop</td>
+                            <td>Dotun Food</td>
+                            <td><button className="bg-[#F18805] text-white rounded-lg py-1 px-[10px]">Pending</button></td>
+                        </tr>
+                        <tr className='my-1'>
+                            <td className="flex flex-col lg:flex-row gap-1 py-3">
+                                <img src="/admineggs.png" alt="Image of beans" className="w-[50px]"/>
+                                <p className="self-center">Eggs</p>
+                            </td>
+                            <td className="text-center">Poultry</td>
+                            <td>LMK Farms</td>
+                            <td><button className="bg-[#F18805] text-white rounded-lg py-1 px-[10px]">Pending</button></td>
+                        </tr>
+                        <tr className='my-1'>
+                            <td className="flex flex-col lg:flex-row gap-1 py-3">
+                                <img src="/admincatfish.png" alt="Image of beans" className="w-[50px]"/>
+                                <p className="self-center">Catfish</p>
+                            </td>
+                            <td className="text-center">Aquaculture</td>
+                            <td>LMK Farms</td>
+                            <td><button className="bg-[#F18805] text-white rounded-lg py-1 px-[10px]">Pending</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div className="bg-white p-3 rounded-[10px]">
+                <div className="flex justify-between font-semibold my-1">
+                    <h2 className="text-[#555657] text-xl">Vendor Request</h2>
+                    <button className="text-Green text-sm cursor-pointer">See all</button>
+                </div>
+                <div className="flex gap-2 p-2 my-2 border-[0.5px] border-[#C8C8C9] rounded">
+                    <img src="/James.png" alt="Picture of Vendor James" className="self-start mt-2"/>
+                    <div className="flex flex-col font-medium text-[#626364] text-xs py-2.5">
+                        <p>Name: <span className="text-Green text-sm">James Okoro</span></p>
+                        <p>Business Name: <span className="text-Green text-sm">Jameson</span></p>
+                        <div className="flex gap-3 mt-3">
+                            <button className="bg-Green text-white p-[10px] rounded">Accept</button>
+                            <button className="bg-[#960200] text-white p-[10px] rounded">Reject</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex gap-2 p-2 my-2 border-[0.5px] border-[#C8C8C9] rounded">
+                    <img src="/Toyin.png" alt="Picture of Vendor Toyin" className="self-start mt-2"/>
+                    <div className="flex flex-col font-medium text-[#626364] text-xs py-2.5">
+                        <p>Name: <span className="text-Green text-sm">Toyin Balogun</span></p>
+                        <p>Business Name: <span className="text-Green text-sm">T.Food</span></p>
+                        <div className="flex gap-3 mt-3">
+                            <button className="bg-Green text-white p-[10px] rounded">Accept</button>
+                            <button className="bg-[#960200] text-white p-[10px] rounded">Reject</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
