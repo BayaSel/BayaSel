@@ -4,6 +4,8 @@ import Offers from '../components/Offers/Offers';
 import Categories from './Categories/Categories';
 import Products from '../components/Products/Products';
 
+
+
 function Homepage() {
   return (
     <div className="w-full min-h-screen relative">
@@ -15,7 +17,7 @@ function Homepage() {
       <div className='w-full absolute top-0 bottom-0'>
         <Slides />
       </div>
-      <div>
+      <div> 
         <Offers />     
       </div>
       <Categories />

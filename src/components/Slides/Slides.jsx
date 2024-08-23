@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { GoDash } from "react-icons/go";
-
+ 
 const slides = [
     {
         title: "Explore Our Wide Range of Products",
@@ -37,7 +37,7 @@ function Slides() {
     const { title, paragraph } = slides[currentIndex];
   return (
     <>
-        <div className='flex justify-between px-[100px]'>
+        <div className='flex justify-between px-[16px] lg:px-[100px]'>
             <div className='py-[155px]'>
                 <IoIosArrowBack 
                 className='text-white w-[60px] h-[60px] border-2 rounded-full active:bg-white active:text-black 
@@ -47,7 +47,7 @@ function Slides() {
             </div>
             <div className='flex flex-col items-center py-[81px]'>
                 <div className='flex flex-col items-center'>
-                    <h1 className='w-[725px] h-[48px] text-[40px] text-white font-semibold text-center leading-[48px] mb-[39px]'>{title}</h1>
+                    <h1 className='w-[725px] h-[48px] text=[16px] lg:text-[40px] text-white font-semibold text-center leading-[48px] mb-[39px]'>{title}</h1>
                     <p className='w-[621px] h-[64px] text-[20px] text-white font-semibold text-center mb-[24px]'>{paragraph}</p>
                 </div>
                 <button className='w-[141px] h-[48px] bg-green-700 flex justify-center p-[12px] gap-[3px] rounded-md mb-[60px]'>
