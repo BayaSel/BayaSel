@@ -13,7 +13,7 @@ module.exports = {
         30: "120px",
       },
       colors: {
-        "4BAF47": "#4BAF47",
+        Green: "#4BAF47",
         customGray: "#F3F3F3", // Add custom gray color if needed
       },
       zIndex: {

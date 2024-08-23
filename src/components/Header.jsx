@@ -55,9 +55,9 @@ function Header() {
                 <i className="bx bx-sm bx-cart-alt"></i>
                 <p className="hidden lg:block pt-0.5">Cart</p>
               </Link>
-              <button className="hidden lg:block lg:w-[120px] ml-5 bg-[#4BAF47] hover:bg-[#5ad356] rounded-lg text-[#343434] font-semibold px-4 py-2">
+              <Link to='/admin' className="hidden lg:block lg:w-[120px] ml-5 bg-[#4BAF47] hover:bg-[#5ad356] rounded-lg text-[#343434] font-semibold px-4 py-2">
                 Be a Vendor
-              </button>
+              </Link>
             </div>
           </div>
         </nav>

@@ -9,12 +9,13 @@ import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import Account from "./pages/Account";
 import Track from "./pages/Track";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 
 
 function App() {
   const location = useLocation();
   
-  const hideHeaderFooter = location.pathname === '/login' || location.pathname === '/register';
+  const hideHeaderFooter = location.pathname === '/login' || location.pathname === '/register' || location.pathname === '/admin';
 
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
         <Route path="/login" element={<LoginForm />} />
         <Route path="/account/*" element={<Account />} />
         <Route path="/track/*" element={<Track />} />
+        <Route path="/admin/*" element={<AdminDashboard />} />
         <Route path="*" element={<p>Page Not Found</p>} />
       </Routes>
       {!hideHeaderFooter && <Footer />}
