@@ -78,7 +78,7 @@
 }
 
 .radios{
-    @apply flex justify-between md:justify-start md:gap-60 items-center;
+    @apply flex justify-between md:justify-start md:gap-96 items-center;
 }
 
 /* Specific Styles */
