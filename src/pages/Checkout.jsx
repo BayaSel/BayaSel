@@ -1,18 +1,12 @@
-import Footer from "../components/Footer"
-import Header from "../components/Header"
 import CheckoutForm from "../components/Form/CheckoutForm"
-import Order from "../components/Order"
+import CheckoutOrder from "../components/CheckoutOrder"
 
 const Checkout =()=>{
     return(
-        <>
-            <Header />
-            <div className="block md:flex md:mt-20">
-                <CheckoutForm />
-                <Order />
-            </div>
-            <Footer/>
-        </>
+        <div className="block md:flex md:mt-20">
+            <CheckoutForm />
+            <CheckoutOrder />
+        </div>
     )
 }
 
