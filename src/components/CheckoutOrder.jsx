@@ -3,9 +3,9 @@ const Order = ()=>{
     const customClass = 'flex justify-between font-medium text-sm md:text-base'
     return(
         <section 
-        className="flex flex-col mx-auto gap-5 h-3/4
-        p-5 box-border border rounded-xl shadow-lg w-[98%] md:w-1/4 lg:w-1/5
-        border-gray-300 mb-5">
+        className="flex flex-col mx-auto gap-5 h-3/4 custom-1280:w-1/4
+        p-5 custom-1280:p-5 md:p-16 box-border border rounded-xl shadow-lg w-[98%] lg:w-1/5 lg:p-5
+        border-gray-300 mb-5 custom-1024:w-[98%]">
             <h2 className="font-semibold text-lg mb-2">Your Order</h2>
             <div className="flex items-center gap-4 font-medium text-sm md:text-base">
                 <img src="/Rectangle 3.svg" alt="oranges" />

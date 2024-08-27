@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export default function CustomRadioButton({ isChecked, onChange, label }) {
   return (
-    <div className="flex items-center font-semibold md:gap-6 gap-4 text-sm md:text-lg">
+    <div className="flex w-full items-center font-semibold md:gap-6 gap-4 overflow-hidden text-sm lg:text-lg">
       <input
         type="radio"
         id={label}

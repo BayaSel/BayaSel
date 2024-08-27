@@ -1,15 +1,15 @@
-import CheckoutForm from "../components/Form/CheckoutForm"
-import CheckoutOrder from "../components/CheckoutOrder"
+import CheckoutForm from "../components/Form/CheckoutForm";
+import CheckoutOrder from "../components/CheckoutOrder";
 
-const Checkout =()=>{
-    return(
+const Checkout = () => {
+    return (
         <>
-            <div className="block md:flex md:mt-20">
+            <div className="block lg:flex md:mt-20 custom-1024:block">
                 <CheckoutForm />
                 <CheckoutOrder />
             </div>
         </>
-    )
+    );
 }
 
-export default Checkout
+export default Checkout;
