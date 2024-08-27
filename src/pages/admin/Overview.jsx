@@ -9,28 +9,28 @@ export default function Overview() {
        
         {/* Total Section */}
         <section className="flex gap-3">
-            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded">
+            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
                 <img src="/totaluser.png" alt="Total User Icon" className="w-[53px] h-[53px] mt-3"/>
                 <div className="flex flex-col space-y-5">
                     <p className="text-semibold text-sm text-[#555657]">Total Users</p>
                     <p className="text-semibold text-xl text-[#417149] text-center">500</p>
                 </div>
             </div>
-            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded">
+            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
                 <img src="/totalvendor.png" alt="Total Vendor Icon" className="w-[53px] h-[53px] mt-3"/>
                 <div className="flex flex-col space-y-5">
                     <p className="text-semibold text-sm text-[#555657]">Total Vendors</p>
                     <p className="text-semibold text-xl text-[#115DCF] text-center">150</p>
                 </div>
             </div>
-            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded">
+            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
                 <img src="/totalsales.png" alt="Total Sale Icon" className="w-[53px] h-[53px] mt-3"/>
                 <div className="flex flex-col space-y-5">
                     <p className="text-semibold text-sm text-[#555657]">Total Sales</p>
                     <p className="text-semibold text-xl text-[#8E0AA3] text-center">850</p>
                 </div>
             </div>
-            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded">
+            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
                 <img src="/totalvisitor.png" alt="Total Visitor Icon" className="w-[53px] h-[53px] mt-3"/>
                 <div className="flex flex-col space-y-5">
                     <p className="text-semibold text-sm text-[#555657]">Total Visitors</p>
@@ -45,7 +45,7 @@ export default function Overview() {
                 <div className="flex justify-between font-semibold">
                     <h2 className="text-xl text-[#555657]">Sales Summary</h2>
                     <div className="flex gap-2">
-                        <button className="bg-Green hover:bg-[#63da5f] text-white py-1 px-[10px] cursor-pointer rounded-lg text-base">Monthly</button>
+                        <button className="transition duration-300 ease-in-out transform hover:scale-105 bg-Green hover:bg-[#63da5f] text-white py-1 px-[10px] cursor-pointer rounded-lg text-base">Monthly</button>
                         <Select />
                     </div>
                 </div>
@@ -71,7 +71,7 @@ export default function Overview() {
                             </td>
                             <td>8 (Bags)</td>
                             <td>LMK Farms</td>
-                            <td><button className="bg-[#F18805] text-white rounded-lg py-1 px-[10px]">Pending</button></td>
+                            <td><button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#F18805] text-white rounded-lg py-1 px-[10px]">Pending</button></td>
                         </tr>
                         <tr className='my-1'>
                             <td className="flex flex-col gap-1 py-3">
@@ -80,7 +80,7 @@ export default function Overview() {
                             </td>
                             <td>6 (Bags)</td>
                             <td>Dotun Foods</td>
-                            <td><button className="bg-[#AB3533] text-white rounded-lg py-1 px-[10px]">Not alerted</button></td>
+                            <td><button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#AB3533] text-white rounded-lg py-1 px-[10px]">Not alerted</button></td>
                         </tr>
                         <tr className='my-1'>
                             <td className="flex flex-col gap-1 py-3">
@@ -89,7 +89,7 @@ export default function Overview() {
                             </td>
                             <td>5 (Bunch)</td>
                             <td>Dotun Foods</td>
-                            <td><button className="bg-[#AB3533] text-white rounded-lg py-1 px-[10px]">Not alerted</button></td>
+                            <td><button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#AB3533] text-white rounded-lg py-1 px-[10px]">Not alerted</button></td>
                         </tr>
                         <tr className='my-1'>
                             <td className="flex flex-col gap-1 py-3">
@@ -98,7 +98,7 @@ export default function Overview() {
                             </td>
                             <td>8 (Bags)</td>
                             <td>LMK Farms</td>
-                            <td><button className="bg-[#F18805] text-white rounded-lg py-1 px-[10px] h-fit">Pending</button></td>
+                            <td><button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#F18805] text-white rounded-lg py-1 px-[10px] h-fit">Pending</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -109,7 +109,7 @@ export default function Overview() {
         <section className="p-4 bg-white rounded-[10px] lg:w-[700px] w-fit mb-5">
             <div className="flex justify-between py-2 font-semibold">
                 <h2 className="text-[#555657] text-xl">Recent Order</h2>
-                <button className="text-Green text-sm cursor-pointer">See all</button>
+                <button className="transition duration-300 ease-in-out transform hover:scale-105 text-Green text-sm cursor-pointer">See all</button>
             </div>
             <table className="table-auto border-collapse my-3 mx-2 w-full">
                 <thead>
@@ -196,7 +196,7 @@ export default function Overview() {
                 </table>
             </div>
             <div className="bg-white p-3 rounded-[10px]">
-                <div className="flex justify-between font-semibold my-1">
+                <div className="flex justify-between font-semibold my-2">
                     <h2 className="text-[#555657] text-xl">Vendor Request</h2>
                     <button className="text-Green text-sm cursor-pointer">See all</button>
                 </div>
@@ -206,8 +206,8 @@ export default function Overview() {
                         <p>Name: <span className="text-Green text-sm">James Okoro</span></p>
                         <p>Business Name: <span className="text-Green text-sm">Jameson</span></p>
                         <div className="flex gap-3 mt-3">
-                            <button className="bg-Green text-white p-[10px] rounded">Accept</button>
-                            <button className="bg-[#960200] text-white p-[10px] rounded">Reject</button>
+                            <button className="transition duration-300 ease-in-out transform hover:scale-105 bg-Green text-white p-[10px] rounded">Accept</button>
+                            <button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#960200] text-white p-[10px] rounded">Reject</button>
                         </div>
                     </div>
                 </div>
@@ -217,8 +217,8 @@ export default function Overview() {
                         <p>Name: <span className="text-Green text-sm">Toyin Balogun</span></p>
                         <p>Business Name: <span className="text-Green text-sm">T.Food</span></p>
                         <div className="flex gap-3 mt-3">
-                            <button className="bg-Green text-white p-[10px] rounded">Accept</button>
-                            <button className="bg-[#960200] text-white p-[10px] rounded">Reject</button>
+                            <button className="transition duration-300 ease-in-out transform hover:scale-105 bg-Green text-white p-[10px] rounded">Accept</button>
+                            <button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#960200] text-white p-[10px] rounded">Reject</button>
                         </div>
                     </div>
                 </div>

@@ -17,7 +17,7 @@ export default function Select() {
   return (
     <Listbox value={selected} onChange={setSelected}>
       <div className="relative">
-        <ListboxButton className="relative w-full cursor-default border border-[#4BAF47] rounded-lg bg-white py-[10px] pl-3 pr-10 text-left text-[#4BAF47] shadow-sm ring-1 ring-inset ring-[#4BAF47] focus:outline-none focus:ring-2 focus:ring-[#4BAF47] sm:text-sm lg:text-base leading-6">
+        <ListboxButton className="relative w-full cursor-default border border-[#4BAF47] rounded-lg bg-white py-[10px] pl-3 pr-10 text-left text-[#4BAF47] shadow-sm ring-1 ring-inset ring-[#4BAF47] focus:outline-none focus:ring-2 focus:ring-[#4BAF47] sm:text-sm lg:text-base leading-6 transition duration-300 ease-in-out transform hover:scale-105">
           <span className="block font-semibold">{selected.year}</span>
           <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
             <ChevronDownIcon aria-hidden="true" className="h-8 w-8 text-[#4BAF47] font-light" />
