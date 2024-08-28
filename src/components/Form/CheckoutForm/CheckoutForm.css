@@ -27,7 +27,8 @@
 }
 
 .input-container input {
-    @apply w-full h-10 lg:h-12 text-base border rounded-md focus:border-green-500 transition-all duration-300 ease-in-out;
+    @apply w-full h-10 lg:h-12 text-base border rounded-md focus:border-green-500 
+    transition-all duration-300 ease-in-out;
 }
 
 /* Placeholder Text */
@@ -99,10 +100,46 @@
 }
 
 .postal-code {
-    @apply w-full md:w-1/2;
+    @apply w-full md:w-1/2 z-0;
 }
 
 /* Submit Button */
 .btn {
     @apply text-white font-semibold bg-green-500 rounded-md h-12 lg:h-16 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition-all duration-300 ease-in-out;
+}
+
+/* Dropdown Animation */
+.animate-slide-down {
+    @apply transform transition-transform duration-300 ease-out;
+}
+
+.dropdown-list {
+    @apply max-h-0 overflow-hidden transition-all 
+    duration-300 ease-in-out bg-white rounded-md shadow-lg mt-2
+    z-10 absolute w-full;
+}
+
+.dropdown-list-entered {
+    @apply max-h-64;
+}
+
+/* Dropdown Item Hover */
+.dropdown-item {
+    @apply p-2 md:p-4 text-gray-700 cursor-pointer transition-colors duration-200 ease-in-out;
+}
+
+.dropdown-item:hover {
+    @apply bg-gray-200;
+}
+
+/* Hide arrows in number input for Chrome, Safari, Edge, and Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide arrows in number input for Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
