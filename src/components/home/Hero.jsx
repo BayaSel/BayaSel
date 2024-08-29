@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div className="carousel hero-container mt-[50px] pb-12">
+    <div className="carousel hero-container mt-[50px] pb-12 z-10">
       <Carousel
         prevIcon={
           <span

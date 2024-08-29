@@ -45,7 +45,7 @@ function Header() {
 
           {/* other nav items */}
           <div className="flex gap-1 pl-2">
-            <div className="flex gap-3 items-center text-sm font-semibold ">
+            <div className="flex gap-3 items-center text-sm font-semibold">
               <button className="hidden lg:flex gap-2 hover:text-[#4BAF47]">
                 <i className="bx bx-sm bx-help-circle"></i>
                 <p className="pt-0.5">Help</p>
