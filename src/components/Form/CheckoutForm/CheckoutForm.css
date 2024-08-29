@@ -31,12 +31,11 @@
     transition-all duration-300 ease-in-out;
 }
 
-/* Placeholder Text */
 .placeholder {
     @apply absolute left-1 top-1/2 text-xs lg:text-lg pointer-events-none 
-    p-3 flex items-center transition-all duration-300 ease-in-out;
-    transform: translateY(-50%);
+    p-3 flex items-center transition-all duration-300 ease-in-out !text-gray-700;
     color: #888;
+    transform: translateY(-50%);
 }
 
 .placeholder i {
@@ -81,6 +80,24 @@
     bg-white border rounded text-gray-500 text-xs lg:text-lg transition-colors duration-300 ease-in-out hover:border-green-500;
 }
 
+.dropdown-list {
+    @apply max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white rounded-md shadow-lg mt-2 z-10 absolute w-full;
+}
+
+/* Dropdown List Visibility */
+.dropdown-list-entered {
+    @apply max-h-64;
+}
+
+/* Dropdown Item Styling */
+.dropdown-item {
+    @apply p-2 md:p-4 text-gray-700 cursor-pointer transition-colors duration-200 ease-in-out lg:text-lg text-sm;
+}
+
+.dropdown-item:hover {
+    @apply bg-gray-200;
+}
+
 /* Checkbox */
 .check {
     @apply flex items-center gap-3 mb-2 rounded-md text-sm lg:text-lg;
@@ -108,29 +125,6 @@
     @apply text-white font-semibold bg-green-500 rounded-md h-12 lg:h-16 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition-all duration-300 ease-in-out;
 }
 
-/* Dropdown Animation */
-.animate-slide-down {
-    @apply transform transition-transform duration-300 ease-out;
-}
-
-.dropdown-list {
-    @apply max-h-0 overflow-hidden transition-all 
-    duration-300 ease-in-out bg-white rounded-md shadow-lg mt-2
-    z-10 absolute w-full;
-}
-
-.dropdown-list-entered {
-    @apply max-h-64;
-}
-
-/* Dropdown Item Hover */
-.dropdown-item {
-    @apply p-2 md:p-4 text-gray-700 cursor-pointer transition-colors duration-200 ease-in-out;
-}
-
-.dropdown-item:hover {
-    @apply bg-gray-200;
-}
 
 /* Hide arrows in number input for Chrome, Safari, Edge, and Opera */
 input[type=number]::-webkit-inner-spin-button,

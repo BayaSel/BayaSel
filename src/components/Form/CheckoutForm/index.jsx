@@ -1,20 +1,14 @@
 import './CheckoutForm.css';
 import CustomCheckbox from '../../CustomCheckbox';
 import CustomRadioButton from '../../CustomRadioButton';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 const Checkout = () => {
-
-
     const [selectedOption, setSelectedOption] = useState(null);
     const [selectedState, setSelectedState] = useState('');
     const [selectedCity, setSelectedCity] = useState('');
     const [isStateDropdownOpen, setIsStateDropdownOpen] = useState(false);
     const [isCityDropdownOpen, setIsCityDropdownOpen] = useState(false);
-
-    const stateDropdownRef = useRef(null);
-    const cityDropdownRef = useRef(null);
-
 
     const states = ['State 1', 'State 2', 'State 3'];
     const cities = {
@@ -23,33 +17,15 @@ const Checkout = () => {
         'State 3': ['City G', 'City H', 'City I'],
     };
 
-    const toggleStateDropdown = () => {
-        setIsStateDropdownOpen(!isStateDropdownOpen);
-    };
-
-    const toggleCityDropdown = () => {
-        setIsCityDropdownOpen(!isCityDropdownOpen);
-    };
-
     const handleStateChange = (state) => {
         setSelectedState(state);
         setSelectedCity(''); // Reset city when state changes
-        setIsStateDropdownOpen(false); // Close the dropdown after selection
+        setIsStateDropdownOpen(false);
     };
 
     const handleCityChange = (city) => {
         setSelectedCity(city);
-        setIsCityDropdownOpen(false); // Close the dropdown after selection
-    };
-
-    const handleBlur = (dropdownType) => {
-        setTimeout(() => {
-            if (dropdownType === 'state') {
-                setIsStateDropdownOpen(false);
-            } else if (dropdownType === 'city') {
-                setIsCityDropdownOpen(false);
-            }
-        }, 100); // Delay to allow click on dropdown items
+        setIsCityDropdownOpen(false);
     };
 
     const handleCheckboxChange = (isChecked) => {
@@ -110,48 +86,48 @@ const Checkout = () => {
                     <div className='shipping-info'>
                     <div className='dropdown-container'>
                             <div className="dropdown">
-                                <div
+                                <div 
                                     className="dropdown-header"
-                                    onClick={toggleStateDropdown}
-                                    onBlur={() => handleBlur('state')}
-                                    tabIndex={0} // Make it focusable
-                                    ref={stateDropdownRef}
-                                >
+                                    onClick={() => setIsStateDropdownOpen(!isStateDropdownOpen)}>
                                     <i className='bx bx-map-alt'></i>
-                                    <span>{selectedState || 'Select State'}</span>
-                                    <i className={`bx ${isStateDropdownOpen ? 'bx-chevron-up' : 'bx-chevron-down'}`}></i>
+                                        <span>{selectedState || "Select State"}</span>
+                                    <i className='bx bx-chevron-down'></i>
                                 </div>
                                 {isStateDropdownOpen && (
-                                    <div className={`dropdown-list ${isStateDropdownOpen ? 'animate-slide-down dropdown-list-entered' : ''}`}>
+                                    <ul className='dropdown-list dropdown-list-entered'>
                                         {states.map((state) => (
-                                            <div key={state} onClick={() => handleStateChange(state)} className="dropdown-item">
+                                            <li
+                                                key={state}
+                                                className='dropdown-item'
+                                                onClick={() => handleStateChange(state)}
+                                            >
                                                 {state}
-                                            </div>
+                                            </li>
                                         ))}
-                                    </div>
+                                    </ul>
                                 )}
                             </div>
                             <div className="dropdown">
-                                <div
+                                <div 
                                     className="dropdown-header"
-                                    onClick={toggleCityDropdown}
-                                    onBlur={() => handleBlur('city')}
-                                    tabIndex={0} // Make it focusable
-                                    ref={cityDropdownRef}
-                                    disabled={!selectedState}
-                                >
+                                    onClick={() => setIsCityDropdownOpen(!isCityDropdownOpen)}>
                                     <i className='bx bx-map-alt'></i>
-                                    <span>{selectedCity || 'Select City'}</span>
-                                    <i className={`bx ${isCityDropdownOpen ? 'bx-chevron-up' : 'bx-chevron-down'}`}></i>
+                                    <span>{selectedCity || "Select City"}</span>
+                                    <i className='bx bx-chevron-down'></i>
                                 </div>
-                                {isCityDropdownOpen && selectedState && (
-                                    <div className={`dropdown-list ${isCityDropdownOpen ? 'animate-slide-down dropdown-list-entered' : ''}`}>
+                                {isCityDropdownOpen && selectedState &&(
+                                    <ul>
                                         {cities[selectedState].map((city) => (
-                                            <div key={city} onClick={() => handleCityChange(city)} className="dropdown-item">
+                                            <li
+                                                key={city}
+                                                className='dropdown-item'
+                                                onClick={() => handleCityChange(city)}
+                                            >
                                                 {city}
-                                            </div>
-                                        ))}
-                                    </div>
+                                            </li>
+                                        ))
+                                        }
+                                    </ul>
                                 )}
                             </div>
                         </div>
