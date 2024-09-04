@@ -1,7 +1,6 @@
 export const ApprovedProductsData = [
-    // Array of your data items
     {
-      imgSrc: "/Beans.png",
+      imgSrc: "/biggerbeans.png",
       name: "Beans",
       category: "Crop",
       price: "$300",
@@ -108,6 +107,59 @@ export const ApprovedProductsData = [
       sold: 28,
       vendor: "LMK Farms",
     },
-    // Add more items here...
+    {
+      imgSrc: "/Beans.png",
+      name: "Beans",
+      category: "Crop",
+      price: "$300",
+      stock: 25,
+      sold: 15,
+      vendor: "Dotun Foods",
+    },
+    {
+      imgSrc: "/Carrot.png",
+      name: "Carrot",
+      category: "Crop",
+      price: "$100",
+      stock: 35,
+      sold: 10,
+      vendor: "Dotun Foods",
+    },
+    {
+      imgSrc: "/Banana.png",
+      name: "Banana",
+      category: "Crop",
+      price: "$400",
+      stock: 15,
+      sold: 40,
+      vendor: "Dotun Foods",
+    },
+    {
+      imgSrc: "/Rice.png",
+      name: "Rice",
+      category: "Crop",
+      price: "$250",
+      stock: 40,
+      sold: 75,
+      vendor: "Dotun Foods",
+    },
+    {
+      imgSrc: "/Guineafowl.png",
+      name: "Guinea Fowl",
+      category: "Poultry",
+      price: "$40",
+      stock: 10,
+      sold: 15,
+      vendor: "LMK Farms",
+    },
+    {
+      imgSrc: "/Chicken.png",
+      name: "Old Layers",
+      category: "Poultry",
+      price: "$20",
+      stock: 5,
+      sold: 28,
+      vendor: "LMK Farms",
+    },
   ];
   

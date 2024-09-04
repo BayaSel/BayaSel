@@ -23,11 +23,11 @@ export function TablePagination({ currentPage, setCurrentPage, totalPages }) {
     <div className="flex justify-end gap-2 mt-3">
       <IconButton
         variant="text"
-        className="rounded-lg"
+        className="flex items-center justify-center"
         onClick={prev}
         disabled={currentPage === 1}
       >
-        <ChevronLeftIcon strokeWidth={2} className="h-5 w-5 text-Green" />
+        <ChevronLeftIcon strokeWidth={2} className="h-6 w-6 text-Green" />
       </IconButton>
       <div className="flex gap-2">
         {Array.from({ length: totalPages }).map((_, index) => (
@@ -35,7 +35,7 @@ export function TablePagination({ currentPage, setCurrentPage, totalPages }) {
             key={index}
             variant={currentPage === index + 1 ? "filled" : "text"}
             onClick={() => handlePageClick(index + 1)}
-            className={`rounded-lg ${
+            className={`rounded-lg w-7 h-7 text-sm flex items-center justify-center self-center ${
                 currentPage === index + 1
                   ? "bg-Green text-white"
                   : "bg-[#EDEDEE] text-[#626364]"
@@ -47,11 +47,11 @@ export function TablePagination({ currentPage, setCurrentPage, totalPages }) {
       </div>
       <IconButton
         variant="text"
-        className="rounded-full"
+        className="flex items-center justify-center"
         onClick={next}
         disabled={currentPage === totalPages}
       >
-        <ChevronRightIcon strokeWidth={2} className="h-5 w-5 text-Green" />
+        <ChevronRightIcon strokeWidth={2} className="h-6 w-6 text-Green" />
       </IconButton>
     </div>
   );

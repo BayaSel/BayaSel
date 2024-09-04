@@ -3,7 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { useState } from 'react';
 import { useLocation, Route, Routes } from 'react-router-dom';
 import AdminHeader from "./AdminHeader";
-import AdminSideNav from "./AdminSideNav";
+import AdminSideNav from "./component/AdminSideNav";
 import Overview from "./Overview";
 import AdminProduct from './AdminProduct';
 import AdminOrder from './AdminOrder';
@@ -37,7 +37,7 @@ function AdminDashboard() {
         </div>
 
         {/* Main Content with Transitions */}
-        <div className={`lg:block basis-full lg:basis-3/4 px-4 py-5`}>
+        <div className={`lg:block basis-full lg:basis-3/4 px-4 py-4`}>
           <TransitionGroup>
             <CSSTransition key={location.key} classNames="fade" timeout={300}>
               <div>

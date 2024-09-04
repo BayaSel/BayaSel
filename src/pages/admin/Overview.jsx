@@ -57,10 +57,10 @@ export default function Overview() {
                 <table className="table-auto border-collapse">
                     <thead className="bg-Green text-white rounded-lg">
                         <tr className="text-sm font-medium">
-                            <th className="px-3 py-2">Product</th>
+                            <th className="px-3 py-2 rounded-tl-lg rounded-bl-lg">Product</th>
                             <th className="px-3 py-2">Qty left</th>
                             <th className="px-3 py-2">Vendor</th>
-                            <th className="px-3 py-2">Status</th>
+                            <th className="px-3 py-2 rounded-tr-lg rounded-br-lg">Status</th>
                         </tr>
                     </thead>
                     <tbody className="font-medium text-[10px] text-[#555657] divide-y divide-[#E5E7EB]">
@@ -114,12 +114,12 @@ export default function Overview() {
             <table className="table-auto border-collapse my-3 mx-2 w-full">
                 <thead>
                     <tr className="text-sm font-medium bg-Green text-white rounded-xl justify-around">
-                        <th className="px-2 py-3">Order no.</th>
+                        <th className="px-2 py-3 rounded-tl-lg rounded-bl-lg">Order no.</th>
                         <th className="px-2 py-3">Date</th>
                         <th className="px-2 py-3">Vendor</th>
                         <th className="pl-1.5 py-3">Customer name</th>
                         <th className="px-2 py-3">Price</th>
-                        <th className="px-2 py-3">Satus</th>
+                        <th className="px-2 py-3 rounded-tr-lg rounded-br-lg">Satus</th>
                     </tr>
                 </thead>
                 <tbody className="font-medium text-[10px] text-[#555657] divide-y divide-[#E5E7EB] py-2">
@@ -158,10 +158,10 @@ export default function Overview() {
                 <table className="border-collapse">
                     <thead className="bg-Green text-white rounded-lg">
                         <tr className="text-sm font-medium">
-                            <th className="px-3 py-2">Product</th>
+                            <th className="px-3 py-2 rounded-tl-lg rounded-bl-lg">Product</th>
                             <th className="px-3 py-2">Category</th>
                             <th className="px-3 py-2">Vendor</th>
-                            <th className="px-3 py-2">Status</th>
+                            <th className="px-3 py-2 rounded-tr-lg rounded-br-lg">Status</th>
                         </tr>
                     </thead>
                     <tbody className="font-medium text-[10px] text-[#555657] divide-y divide-[#E5E7EB]">
