@@ -1,11 +1,12 @@
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
 // import Home from "./components/home/Home";
 import LoginForm from "./pages/LoginForm";
 import RegisterForm from "./pages/RegisterForm";
 import Checkout from "./pages/Checkout";
+
 
 function App() {
   return (
@@ -13,11 +14,12 @@ function App() {
       {/* <Header /> */}
       <Routes>
         <Route
-          path="/"
+          path='/'
           element={
             <>
               {/* {" "} */}
               <Header />
+              <SuccessDetails />
               <Footer />
             </>
           }
