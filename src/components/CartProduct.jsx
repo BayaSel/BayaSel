@@ -4,6 +4,7 @@ import AddIcon from "@mui/icons-material/Add";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import { red } from "@mui/material/colors";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function CartProduct(props) {
   const [count, setCount] = useState(0);
@@ -88,7 +89,7 @@ function CartProduct(props) {
             </tbody>
           </table>
           <button className="w-[100%] mt-5 bg-[#50d71e] py-[10px] px-[0.4rem] rounded-[1rem]">
-            Proceed to checkout
+            <Link to='/checkout'> Proceed to checkout</Link>
           </button>
         </div>
       </div>

@@ -6,19 +6,10 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-      margin: {
-        "-12.5": "-50px",
-      },
-      height: {
-        30: "120px",
-      },
-      colors: {
-        "4BAF47": "#4BAF47",
-        customGray: "#F3F3F3", // Add custom gray color if needed
-      },
-      zIndex: {
-        'popover': '1000', 
-      },
+      screens: {
+        'custom-1024': {'raw': '(min-width: 1024px) and (max-width: 1025px)'},
+        'custom-1280': {'raw': '(min-width: 1026px) and (max-width: 1280px)'},
+      }
     },
   },
   plugins: [],

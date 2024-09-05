@@ -1,0 +1,139 @@
+/* General Styles */
+.checkout-container {
+    @apply flex justify-center items-center w-full md:w-full custom-1024:w-full
+    lg:w-3/5 mx-auto box-border rounded-lg md:shadow-md mb-6 transition-all duration-300 ease-in-out;
+}
+
+.checkout-form {
+    @apply w-full flex flex-col justify-between p-5 custom-1280:p-10 md:p-16 lg:p-24 gap-8;
+}
+
+/* Contact Info and Shipping Address Headers */
+.contact-info h2, .shipping-add h2 {
+    @apply text-lg lg:text-xl font-semibold transition-colors duration-300 ease-in-out;
+}
+
+.contact-info h2 {
+    @apply mb-4 lg:mb-6;
+}
+
+.contact-info h2:hover, .shipping-add h2:hover {
+    @apply text-green-500;
+}
+
+/* Input Fields */
+.input-container {
+    @apply relative w-full mb-3;
+}
+
+.input-container input {
+    @apply w-full h-10 lg:h-12 text-base border rounded-md focus:border-green-500 
+    transition-all duration-300 ease-in-out;
+}
+
+.placeholder {
+    @apply absolute left-1 top-1/2 text-xs lg:text-lg pointer-events-none 
+    p-3 flex items-center transition-all duration-300 ease-in-out !text-gray-700;
+    color: #888;
+    transform: translateY(-50%);
+}
+
+.placeholder i {
+    @apply mr-2 lg:mr-5 transition-transform duration-300 ease-in-out;
+}
+
+/* Placeholder Interaction */
+.input-container input:focus + .placeholder,
+.input-container input:not(:placeholder-shown) + .placeholder {
+    @apply opacity-0 transition-opacity duration-300 ease-in-out;
+}
+
+/* Info Rows */
+.info {
+    @apply flex flex-row gap-4 transition-transform duration-300 ease-in-out;
+}
+
+/* Shipping Section */
+.shipping-add .shipping {
+    @apply flex justify-between items-center mb-4 lg:mb-6;
+}
+
+.shipping-add .shipping p {
+    @apply text-green-500 text-base lg:text-lg transition-colors duration-300 ease-in-out;
+}
+
+.shipping-info {
+    @apply flex flex-col;
+}
+
+/* Dropdown */
+.dropdown-container {
+    @apply flex w-full relative gap-3 mb-3 lg:mb-5;
+}
+
+.dropdown {
+    @apply relative w-full md:w-2/4 h-10 lg:h-12;
+}
+
+.dropdown-header {
+    @apply flex justify-between items-center h-10 md:h-12 p-4 md:p-5 cursor-pointer
+    bg-white border rounded text-gray-500 text-xs lg:text-lg transition-colors duration-300 ease-in-out hover:border-green-500;
+}
+
+.dropdown-list {
+    @apply max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white rounded-md shadow-lg mt-2 z-10 absolute w-full;
+}
+
+/* Dropdown List Visibility */
+.dropdown-list-entered {
+    @apply max-h-64;
+}
+
+/* Dropdown Item Styling */
+.dropdown-item {
+    @apply p-2 md:p-4 text-gray-700 cursor-pointer transition-colors duration-200 ease-in-out lg:text-lg text-sm;
+}
+
+.dropdown-item:hover {
+    @apply bg-gray-200;
+}
+
+/* Checkbox */
+.check {
+    @apply flex items-center gap-3 mb-2 rounded-md text-sm lg:text-lg;
+}
+
+.check label{
+    @apply mr-2 text-green-500 text-sm lg:text-lg transition-colors duration-300 ease-in-out;
+}
+
+.radios {
+    @apply flex md:justify-start md:gap-40 custom-1280:gap-32 lg:gap-80 items-center;
+}
+
+/* Address Input */
+.address-input {
+    @apply w-full;
+}
+
+.postal-code {
+    @apply w-full md:w-1/2 z-0;
+}
+
+/* Submit Button */
+.btn {
+    @apply text-white font-semibold bg-green-500 rounded-md h-12 lg:h-16 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition-all duration-300 ease-in-out text-center lg:text-2xl pt-3;
+}
+
+
+/* Hide arrows in number input for Chrome, Safari, Edge, and Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide arrows in number input for Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

@@ -1,33 +1,33 @@
-//import React from "react";
-import Hero from "./Hero";
-import Benefit from "./Benefit";
-import Category from "./Category";
-import Recommended from "./Recommended";
-import BestSeller from "./BestSeller";
-import Deal from "./Deal";
-import Ad from "./Ad";
-import Latest from "./Latest";
+// //import React from "react";
+// import Hero from "./Hero";
+// import Benefit from "./Benefit";
+// import Category from "./Category";
+// import Recommended from "./Recommended";
+// import BestSeller from "./BestSeller";
+// import Deal from "./Deal";
+// import Ad from "./Ad";
+// import Latest from "./Latest";
 
-function Home() {
-  return (
-    <div>
-      <Hero />
+// function Home() {
+//   return (
+//     <div>
+//       <Hero />
 
-      <Benefit />
+//       <Benefit />
 
-      <Category />
+//       <Category />
 
-      <Recommended />
+//       <Recommended />
 
-      <BestSeller />
+//       <BestSeller />
 
-      <Deal />
+//       <Deal />
 
-      <Ad />
+//       <Ad />
 
-      <Latest />
-    </div>
-  );
-}
+//       <Latest />
+//     </div>
+//   );
+// }
 
-export default Home;
+// export default Home;
