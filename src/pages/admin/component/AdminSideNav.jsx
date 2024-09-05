@@ -1,11 +1,17 @@
-import { useState } from 'react';
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from "react-router-dom";
 import { GoPeople, GoMegaphone } from "react-icons/go";
 import { GrUserAdmin } from "react-icons/gr";
 
 // eslint-disable-next-line react/prop-types
 export default function AdminSideNav({ onLinkClick }) {
-  const [activeLink, setActiveLink] = useState('overview');
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState('');
+
+  useEffect(() => {
+    const currentPath = location.pathname.split('/').pop();
+    setActiveLink(currentPath);
+  }, [location.pathname]);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
@@ -13,12 +19,12 @@ export default function AdminSideNav({ onLinkClick }) {
   };
 
   return (
-    <div className="bg-[#FFFFFF] flex flex-col w-[320px] space-y-3">
+    <div className="bg-[#FFFFFF] flex flex-col w-[320px] space-y-4">
       <div className="px-4">
         <img src="/adminlogo.png" alt="Bayasel Logo"/>
       </div>
       
-      <nav>
+      <nav className='pb-12'>
         <Link 
           to='overview' 
           onClick={() => handleLinkClick('overview')} 

@@ -71,7 +71,7 @@ export default function Overview() {
                             </td>
                             <td>8 (Bags)</td>
                             <td>LMK Farms</td>
-                            <td><button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#F18805] text-white rounded-lg py-1 px-[10px]">Pending</button></td>
+                            <td><button className=" bg-[#F18805] text-white rounded-lg py-1 px-[10px]">Pending</button></td>
                         </tr>
                         <tr className='my-1'>
                             <td className="flex flex-col gap-1 py-3">
@@ -80,7 +80,7 @@ export default function Overview() {
                             </td>
                             <td>6 (Bags)</td>
                             <td>Dotun Foods</td>
-                            <td><button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#AB3533] text-white rounded-lg py-1 px-[10px]">Not alerted</button></td>
+                            <td><button className=" bg-[#AB3533] text-white rounded-lg py-1 px-[10px]">Not alerted</button></td>
                         </tr>
                         <tr className='my-1'>
                             <td className="flex flex-col gap-1 py-3">
@@ -89,7 +89,7 @@ export default function Overview() {
                             </td>
                             <td>5 (Bunch)</td>
                             <td>Dotun Foods</td>
-                            <td><button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#AB3533] text-white rounded-lg py-1 px-[10px]">Not alerted</button></td>
+                            <td><button className=" bg-[#AB3533] text-white rounded-lg py-1 px-[10px]">Not alerted</button></td>
                         </tr>
                         <tr className='my-1'>
                             <td className="flex flex-col gap-1 py-3">
@@ -98,7 +98,7 @@ export default function Overview() {
                             </td>
                             <td>8 (Bags)</td>
                             <td>LMK Farms</td>
-                            <td><button className="transition duration-300 ease-in-out transform hover:scale-105 bg-[#F18805] text-white rounded-lg py-1 px-[10px] h-fit">Pending</button></td>
+                            <td><button className=" bg-[#F18805] text-white rounded-lg py-1 px-[10px] h-fit">Pending</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -198,7 +198,7 @@ export default function Overview() {
             <div className="bg-white p-3 rounded-[10px]">
                 <div className="flex justify-between font-semibold my-2">
                     <h2 className="text-[#555657] text-xl">Vendor Request</h2>
-                    <button className="text-Green text-sm cursor-pointer">See all</button>
+                    <button className="text-Green text-sm cursor-pointer transition duration-300 ease-in-out transform hover:scale-105">See all</button>
                 </div>
                 <div className="flex gap-2 p-2 my-2 border-[0.5px] border-[#C8C8C9] rounded">
                     <img src="/James.png" alt="Picture of Vendor James" className="self-start mt-2"/>

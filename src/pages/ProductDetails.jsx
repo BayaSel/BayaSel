@@ -111,7 +111,7 @@ function ProductDetails() {
           <div>
             <Routes>
               <Route path="description" element={<ProductDescription />} />
-              <Route path="customer-review" element={<CustomerReview />} />
+              <Route path="customer-review" element={<CustomerReview showWriteReview={true}/>} />
               <Route path="warranty" element={<ProductWarranty />} />
 
               <Route index element={<ProductDescription />} />
