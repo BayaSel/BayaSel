@@ -14,7 +14,7 @@ const products = [
   {
     id: 2,
     name: "Product 2",
-    image: "https://via.placeholder.com/150",
+    image: "../garri-ijebu.png",
     amount: "$200",
     originalAmount: "$250",
     rating: 4,
@@ -23,7 +23,7 @@ const products = [
   {
     id: 3,
     name: "Product 3",
-    image: "https://via.placeholder.com/150",
+    image: "../garri-ijebu.png",
     amount: "$150",
     originalAmount: "$180",
     rating: 3,
@@ -32,7 +32,7 @@ const products = [
   {
     id: 4,
     name: "Product 4",
-    image: "https://via.placeholder.com/150",
+    image: "../garri-ijebu.png",
     amount: "$250",
     originalAmount: "$300",
     rating: 4,
