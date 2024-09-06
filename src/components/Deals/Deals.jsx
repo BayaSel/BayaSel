@@ -26,6 +26,9 @@ const Deals = () => {
           <p>Time Left: {formatTime(time)}</p>
           <button>See all</button>
         </div>
+
+             <AutoSlider />
+        
         <div className='flex items-center bg-black rounded-xl mb-[40px] pl-[48px] pr-[192px] py-[25px] gap-[42px]'>
           <div className='text-white'>
             <p className='pb-[12px] text-[24px] font-semibold'>40% Off Tody</p>
