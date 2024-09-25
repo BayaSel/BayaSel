@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import PropTypes from 'prop-types'
+import { useState } from 'react';
 
-function CustomerReview() {
+function CustomerReview({ showWriteReview }) {
   const [selectedOption, setSelectedOption] = useState("");
   const [textareaValue, setTextareaValue] = useState("");
 
@@ -19,10 +20,10 @@ function CustomerReview() {
       </h3>
       <div className="flex flex-col md:flex-row justify-between gap-10">
         <div className="py-3 basis-3/5">
-          <section className="flex flex-col lg:flex-row text-[#343434] justify-between">
+          <section className="flex flex-col lg:flex-row text-[#343434] gap-36">
             <div className="gap-2 mb-3">
               <div className="flex text-black gap-3">
-                <h1 className="text-xl lg:text-[90px] lg:leading-[135px]">
+                <h1 className="text-xl lg:text-[90px] lg:leading-[135px] font-normal">
                   4.5
                 </h1>
                 <p className="text-sm lg:text-base self-center">out of 5</p>
@@ -86,11 +87,11 @@ function CustomerReview() {
               </div>
             </div>
           </section>
-          <section className="my-5 flex flex-col gap-2 text-[#343434] lg:shadow-md bg-[#ffffff] p-5 rounded-sm">
-            <button className="text-[#4BAF47] hover:text-[#61d85d] cursor-pointer self-end">
+          <section className="my-4 flex flex-col text-[#343434] lg:shadow-md bg-[#ffffff] p-3 rounded">
+            <button className="text-[#4BAF47] transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer self-end">
               See all
             </button>
-            <div className="flex flex-col my-3 lg:my-0 lg:flex-row gap-3">
+            <div className="flex flex-col lg:flex-row gap-2">
               <div className="flex gap-3">
                 <button className="bg-[#4BAF47] text-white text-lg w-10 h-10 rounded-[48px]">
                   P
@@ -113,14 +114,14 @@ function CustomerReview() {
               </div>
             </div>
             <div className="border-b border-[#c4c4c4] pb-3 lg:border-b-0 my-4"></div>
-            <div className="flex flex-col my-3 lg:my-0 lg:flex-row gap-3">
+            <div className="flex flex-col lg:flex-row gap-4">
               <div className="flex gap-3">
                 <button className="bg-[#4BAF47] text-white text-lg w-10 h-10 rounded-[48px]">
                   F
                 </button>
                 <div className="text-xs">
                   <p className="p-1">Faith Anazodo</p>
-                  <p className="text-[#C4C4C4] p-1">October, 1 2024</p>
+                  <p className="text-[#C4C4C4] p-1 whitespace-nowrap">October, 1 2024</p>
                 </div>
               </div>
 
@@ -132,7 +133,7 @@ function CustomerReview() {
                   <i className="bx text-[#4BAF47] bxs-star"></i>
                   <i className="bx text-[#4BAF47] bxs-star"></i>
                 </div>
-                <p className="text-xs basis-1/2">
+                <p className="text-xs basis-1/2 whitespace-nowrap">
                   Exactly what i ordered for us what i get, so love bayasel
                   right now
                 </p>
@@ -140,6 +141,9 @@ function CustomerReview() {
             </div>
           </section>
         </div>
+
+        {/* Write a review section */}
+        {showWriteReview && (
         <div className="font-poppins text-[#343434] text-base lg:basis-2/5">
           <h4 className="font-semibold">Write a review</h4>
           <form className="py-6">
@@ -181,9 +185,18 @@ function CustomerReview() {
             />
           </form>
         </div>
+        )}
       </div>
     </>
   );
 }
+
+CustomerReview.propTypes = {
+  showWriteReview: PropTypes.bool,
+};
+
+CustomerReview.defaultProps = {
+  showWriteReview: true,
+};
 
 export default CustomerReview;
