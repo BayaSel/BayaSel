@@ -1,10 +1,10 @@
-// // import React from "react";
+// import React from "react";
 // import hero1 from "../home/images/hero.png";
 // import hero2 from "../home/images/hero.png";
 // import hero3 from "../home/images/hero.png";
 // import hero4 from "../home/images/hero.png";
 // import { Carousel } from "react-bootstrap";
-// //import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 // import "../Styles/home.css";
 // import shop from "./images/cart-pic.png";
 // import { Link } from "react-router-dom";
@@ -26,6 +26,7 @@
 //           />
 //         }
 //         indicators={true}
+        
 //       >
 //         <Carousel.Item>
 //           <img className="d-block w-100 " src={hero1} alt="First slide" />
@@ -38,10 +39,7 @@
 //               <br className="hidden md:block" />
 //               that promise excellent yield and resilience
 //             </p>
-//             <Link
-//               to="/product"
-//               className="btn btn-success flex items-center justify-center text-black mx-auto"
-//             >
+//             <Link to='/product' className="btn btn-success flex items-center justify-center text-black mx-auto">
 //               Shop Now
 //               <img
 //                 src={shop}
