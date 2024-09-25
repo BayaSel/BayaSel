@@ -2,7 +2,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./components/home/Home";
+// import Home from "./components/home/Home";
 import LoginForm from "./pages/LoginForm";
 import RegisterForm from "./pages/RegisterForm";
 import ProductDetails from "./pages/ProductDetails";
@@ -20,8 +20,8 @@ function App() {
     <>
       {!hideHeaderFooter && <Header />}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/product/*" element={<ProductDetails />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/*" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/login" element={<LoginForm />} />
