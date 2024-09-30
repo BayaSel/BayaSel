@@ -9,7 +9,7 @@ function Cart() {
     setDeleteItem(true);
   }
   return (
-    <>
+    <div className="w-screen">
       <CartHeader />
       {deleteItem ? (
         <p style={{ height: "50svh", display: "grid", placeContent: "center" }}>
@@ -18,7 +18,7 @@ function Cart() {
       ) : (
         <CartProduct itemRemoved={itemRemove} />
       )}
-    </>
+    </div>
   );
 }
 

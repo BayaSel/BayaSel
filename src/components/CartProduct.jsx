@@ -11,7 +11,7 @@ function CartProduct(props) {
   return (
     <>
       <div className="flex flex-col lg:flex-row gap-4 justify-between w-[100%] px-10 py-5 my-20 bg-white-200 ">
-        <table className="w-[100%] text-left">
+        <table className="w-screen text-left">
           <thead className="border-b-[1px] border-gray-500">
             <tr>
               <th className="pb-10">Product</th>
@@ -21,11 +21,11 @@ function CartProduct(props) {
           </thead>
           <tbody>
             <tr>
-              <td className="py-10 pr-20">
+              <td className="py-10 pr-5 lg:pr-20">
                 <img
                   src={orangeImg}
                   alt="orange"
-                  className="inline-block mr-2"
+                  className="flex lg:mr-2"
                 />
                 Fresh orange
               </td>
@@ -63,8 +63,8 @@ function CartProduct(props) {
           </tbody>
         </table>
 
-        <div className="w-[100%] lg:w-[50%] self-center border-[2px] py-10 px-10 rounded-[1rem]">
-          <table className="w-[100%]">
+        <div className="w-full lg:w-[50%] self-center border-[2px] py-10 px-10 rounded-[1rem]">
+          <table className="w-full">
             <tbody>
               <tr>
                 <td className="pb-4">Subtotal</td>
